@@ -21,7 +21,7 @@ const title = ref<string>("MatHOTSanayan CAA");
 const tab = ref<number>(0);
 
 onMounted(async () => {
-  //await useAuthModule().fetchUserData();
+  await useAuthModule().fetchUserData();
 });
 </script>
 
