@@ -1,30 +1,41 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <v-app id="inspire">
+    <HeaderComponent :title="title" />
+    <v-main class="base" app>
+      <TabComponent :tab="tab" />
+      <router-view />
+    </v-main>
+    <LoadingDialogComponent v-bind:activate="useAuthModule().isLoading" />
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script setup lang="ts">
+import { ref, onMounted } from "vue";
+import { useAuthModule } from "./store";
+
+import HeaderComponent from "./components/shared/HeaderComponent.vue";
+import TabComponent from "./components/shared/TabComponent.vue";
+import LoadingDialogComponent from "./components/dialogs/LoadingDialogComponent.vue";
+
+const title = ref<string>("MatHOTSanayan CAA");
+const tab = ref<number>(0);
+
+onMounted(async () => {
+  //await useAuthModule().fetchUserData();
+});
+</script>
+
+<style>
+.base {
+  background-color: #fffde7;
 }
 
-nav {
-  padding: 30px;
+.v-field__field,
+.v-field__overlay {
+  background-color: #fffde7;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.v-data-table-header__content > span {
+  font-weight: bolder;
 }
 </style>
