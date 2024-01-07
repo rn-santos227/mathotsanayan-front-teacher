@@ -1,28 +1,34 @@
 <template>
   <v-app id="inspire">
     <HeaderComponent :title="title" />
-    <v-main class="base" app>
-      <TabComponent :tab="tab" />
+    <NavigationComponent />
+    <v-main class="base">
       <router-view />
     </v-main>
-    <LoadingDialogComponent v-bind:activate="useAuthModule().isLoading" />
+    <LoadingDialogComponent v-bind:activate="authModule.isLoading" />
   </v-app>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 import { useAuthModule } from "./store";
 
 import HeaderComponent from "./components/shared/HeaderComponent.vue";
-import TabComponent from "./components/shared/TabComponent.vue";
+import NavigationComponent from "./components/shared/NavigationComponent.vue";
 import LoadingDialogComponent from "./components/dialogs/LoadingDialogComponent.vue";
 
-const title = ref<string>("MatHOTSanayan CAA");
-const tab = ref<number>(0);
+const authModule = useAuthModule();
+const title = ref<string>("MatHOTsanayan Teacher");
 
-onMounted(async () => {
-  await useAuthModule().fetchUserData();
-});
+async function fetchUserData() {
+  try {
+    await authModule.fetchUserData();
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+
+fetchUserData();
 </script>
 
 <style>
@@ -37,5 +43,9 @@ onMounted(async () => {
 
 .v-data-table-header__content > span {
   font-weight: bolder;
+}
+
+.hide-scroll {
+  overflow-y: hidden;
 }
 </style>
