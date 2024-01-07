@@ -1,9 +1,4 @@
-import { createStore } from "vuex";
+import { createPinia } from "pinia";
 
-export default createStore({
-  state: {},
-  getters: {},
-  mutations: {},
-  actions: {},
-  modules: {},
-});
+const pinia = createPinia();
+export { pinia };
