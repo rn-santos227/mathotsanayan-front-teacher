@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
 import DashboardView from "../views/dashboard/MainView.vue";
+import ReportsView from "../views/reports/MainView.vue";
+import StudentsView from "../views/students/MainView.vue";
 import AuthView from "../views/auth/MainView.vue";
 
 import { useAuthModule } from "@/store";
@@ -14,7 +16,22 @@ const routes: Array<RouteRecordRaw> = [
       forAuth: true,
     },
   },
-
+  {
+    path: "/reports",
+    name: "reports",
+    component: ReportsView,
+    meta: {
+      forAuth: true,
+    },
+  },
+  {
+    path: "/students",
+    name: "students",
+    component: StudentsView,
+    meta: {
+      forAuth: true,
+    },
+  },
   {
     path: "/login",
     name: "login",
@@ -35,7 +52,9 @@ router.beforeEach((to, from, next) => {
   if (to.meta.forAuth && !authStore.isAuthenticated) {
     next("/login");
   } else if (to.meta.forVisitors && authStore.isAuthenticated) {
-    next("/login");
+    next("/");
+  } else if (to.matched.length === 0) {
+    next("/");
   } else {
     next();
   }
