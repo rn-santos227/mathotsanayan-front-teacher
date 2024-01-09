@@ -6,6 +6,12 @@ export default [
     activator: false,
   },
   {
+    text: "Courses",
+    icon: "mdi-certificate",
+    route: "/courses",
+    activator: false,
+  },
+  {
     text: "Schools",
     icon: "mdi-school",
     route: "/schools",
