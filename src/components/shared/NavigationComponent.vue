@@ -2,7 +2,7 @@
   <div v-if="authModule.isAuthenticated">
     <v-navigation-drawer v-model="drawer" :rail="mini" permanent>
       <v-list-item
-        title="ADMIN NAVIGATION"
+        title="TEACHER NAVIGATION"
         :subtitle="authModule.teacher?.email"
         nav
       >
