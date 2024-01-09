@@ -6,6 +6,18 @@ export default [
     activator: false,
   },
   {
+    text: "Schools",
+    icon: "mdi-school",
+    route: "/schools",
+    activator: false,
+  },
+  {
+    text: "Sections",
+    icon: "mdi-chair-school",
+    route: "/sections",
+    activator: false,
+  },
+  {
     text: "Students",
     icon: "mdi-account-school",
     route: "/students",
