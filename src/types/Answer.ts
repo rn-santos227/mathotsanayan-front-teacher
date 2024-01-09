@@ -4,7 +4,7 @@ import Question from "./Question";
 import Student from "./Student";
 
 type Answer = {
-  id?: number;
+  id: number;
   content: string;
   timer?: number;
   attempts?: number;

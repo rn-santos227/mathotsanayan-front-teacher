@@ -1,5 +1,5 @@
 type Grade = {
-  id?: number;
+  id: number;
   evaluation: string;
   skipped: number;
 };
