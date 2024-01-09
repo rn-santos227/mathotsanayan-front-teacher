@@ -1,11 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import { useAuthModule } from "@/store";
 
 import DashboardView from "../views/dashboard/MainView.vue";
 import ReportsView from "../views/reports/MainView.vue";
 import StudentsView from "../views/students/MainView.vue";
 import AuthView from "../views/auth/MainView.vue";
-
-import { useAuthModule } from "@/store";
 
 const routes: Array<RouteRecordRaw> = [
   {
