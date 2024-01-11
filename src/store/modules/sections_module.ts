@@ -7,4 +7,10 @@ export const useSectionsModule = defineStore("sections", {
     isTableLoading: false,
     sections: [] as Section[],
   }),
+
+  getters: {
+    getSections(): Section[] {
+      return this.sections;
+    },
+  },
 });

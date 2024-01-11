@@ -7,4 +7,10 @@ export const useStudentsModule = defineStore("students", {
     isTableLoading: false,
     students: [] as Student[],
   }),
+
+  getters: {
+    getSections(): Student[] {
+      return this.students;
+    },
+  },
 });

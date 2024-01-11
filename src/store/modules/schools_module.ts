@@ -7,4 +7,10 @@ export const useSchoolsModule = defineStore("schools", {
     isTableLoading: false,
     schools: [] as School[],
   }),
+
+  getters: {
+    getSchools(): School[] {
+      return this.schools;
+    },
+  },
 });

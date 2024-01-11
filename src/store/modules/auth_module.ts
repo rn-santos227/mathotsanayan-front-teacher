@@ -100,7 +100,7 @@ export const useAuthModule = defineStore("auth", {
   },
 
   getters: {
-    getStudent(): Teacher {
+    getTeacher(): Teacher {
       return this.teacher;
     },
   },
