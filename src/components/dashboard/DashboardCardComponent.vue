@@ -14,11 +14,9 @@
         class="ma-4"
         :color="props.card.color"
         width="10"
-        size="8"
+        size="80"
         indeterminate
-      >
-        Loading
-      </v-progress-circular>
+      />
     </div>
     <div v-else>
       <v-list lines="two">
