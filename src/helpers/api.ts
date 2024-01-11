@@ -8,4 +8,8 @@ export default {
     PASSWORD: `${BACKEND}password`,
     USER: `${BACKEND}user/2`,
   },
+
+  DASHBOARD: {
+    READ: `${BACKEND}teacher/dashboard`,
+  },
 };
