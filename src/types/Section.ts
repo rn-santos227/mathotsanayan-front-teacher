@@ -9,7 +9,7 @@ type Section = {
   updated_at?: string;
   deleted_at?: string;
   school: number | string | School;
-  teacher: number | string | Teacher;
+  teacher?: Teacher;
 };
 
 export default Section;

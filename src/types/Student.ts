@@ -6,7 +6,7 @@ import Person from "./Person";
 type Student = Person & {
   student_number: string;
   course: number | string | Course;
-  school: number | string | School;
+  school?: number | string | School;
   section: number | string | Section;
 };
 
