@@ -1,5 +1,6 @@
 import Student from "@/types/Student";
 import Page from "@/interfaces/Page";
+import Search from "@/interfaces/Search";
 import api from "@/helpers/api";
 
 import { defineStore } from "pinia";
@@ -50,6 +51,27 @@ export const useStudentsModule = defineStore("students", {
         return true;
       } catch (error) {
         console.error("Error Student in:", error);
+        return false;
+      } finally {
+        this.isTableLoading = false;
+      }
+    },
+
+    async search(payload: Search): Promise<boolean> {
+      try {
+        this.isTableLoading = true;
+        const response = await authenticatedFetch(
+          `${api.STUDENTS.SEARCH}?category=${payload.category}&search=${payload.search}`
+        );
+        const data = await response.json();
+        const { students } = data;
+        this.page.current_page = 1;
+        this.page.total = 1;
+        this.page.per_page = students.length;
+        this.setStudents(students);
+        return true;
+      } catch (error) {
+        console.error("Error Students in:", error);
         return false;
       } finally {
         this.isTableLoading = false;

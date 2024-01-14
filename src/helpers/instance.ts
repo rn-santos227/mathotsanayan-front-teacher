@@ -1,4 +1,3 @@
-import Student from "@/types/Student";
 import School from "@/types/School";
 import Section from "@/types/Section";
 import Subject from "@/types/Subject";
