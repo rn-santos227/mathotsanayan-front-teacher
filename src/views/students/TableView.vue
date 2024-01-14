@@ -11,6 +11,7 @@
             density="compact"
             variant="outlined"
           />
+          <FilterView />
           <v-btn
             class="ml-4"
             variant="outlined"
@@ -91,6 +92,8 @@
 import { computed, onMounted, provide, ref, watch } from "vue";
 import { useStudentsModule } from "@/store";
 import { getSchoolName, getSectionName } from "@/helpers/instance";
+
+import FilterView from "./FilterView.vue";
 
 import SuccessDialogComponent from "@/components/dialogs/SuccessDialogComponent.vue";
 import ErrorDialogComponent from "@/components/dialogs/ErrorDialogComponent.vue";
