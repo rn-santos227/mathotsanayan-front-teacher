@@ -58,7 +58,7 @@ export const useStudentsModule = defineStore("students", {
   },
 
   getters: {
-    getSections(): Student[] {
+    getStudents(): Student[] {
       return this.students;
     },
   },
