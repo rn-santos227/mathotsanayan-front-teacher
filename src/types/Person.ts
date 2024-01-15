@@ -1,4 +1,6 @@
-type Person = {
+import Password from "@/interfaces/Password";
+
+type Person = Password & {
   id?: number;
   full_name?: string;
   first_name: string;
@@ -6,6 +8,7 @@ type Person = {
   last_name: string;
   suffix: string;
   email: string;
+  contact_number: string;
   created_at?: string;
   updated_at?: string;
   deleted_at?: string;

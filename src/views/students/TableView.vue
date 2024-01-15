@@ -99,6 +99,8 @@ import {
 import { getSchoolName, getSectionName } from "@/helpers/instance";
 
 import FilterView from "./FilterView.vue";
+import UpdateView from "./UpdateView.vue";
+import DeleteView from "./DeleteView.vue";
 
 import SuccessDialogComponent from "@/components/dialogs/SuccessDialogComponent.vue";
 import ErrorDialogComponent from "@/components/dialogs/ErrorDialogComponent.vue";

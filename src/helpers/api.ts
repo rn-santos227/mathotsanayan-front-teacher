@@ -10,7 +10,7 @@ export default {
     LOGIN: `${BACKEND}teacher`,
     LOGOUT: `${BACKEND}logout`,
     PASSWORD: `${BACKEND}password`,
-    USER: `${BACKEND}user/2`,
+    USER: `${BACKEND}teacher/user`,
   },
 
   COURSES: {
