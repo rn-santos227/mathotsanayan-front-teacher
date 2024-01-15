@@ -90,7 +90,12 @@
 
 <script setup lang="ts">
 import { computed, onMounted, provide, ref, watch } from "vue";
-import { useStudentsModule } from "@/store";
+import {
+  useStudentsModule,
+  useCoursesModule,
+  useSchoolsModule,
+  useSectionsModule,
+} from "@/store";
 import { getSchoolName, getSectionName } from "@/helpers/instance";
 
 import FilterView from "./FilterView.vue";
@@ -123,6 +128,9 @@ let initialCallMade = false;
 onMounted(async () => {
   if (initialCallMade) return;
   await useStudentsModule().read();
+  await useCoursesModule().read();
+  await useSchoolsModule().read();
+  await useSectionsModule().read();
   initialCallMade = true;
 });
 

@@ -1,5 +1,8 @@
 import Section from "@/types/Section";
+import api from "@/helpers/api";
+
 import { defineStore } from "pinia";
+import { authenticatedFetch } from "@/services/api";
 
 export const useSectionsModule = defineStore("sections", {
   state: () => ({
@@ -26,6 +29,22 @@ export const useSectionsModule = defineStore("sections", {
 
     deleteSection(section: Section) {
       this.sections = this.sections.filter((item) => item.id !== section.id);
+    },
+
+    async read(): Promise<boolean> {
+      try {
+        this.isTableLoading = true;
+        const response = await authenticatedFetch(api.SECTIONS.READ);
+        const data = await response.json();
+        const { sections } = data;
+        this.setSections(sections);
+        return true;
+      } catch (error) {
+        console.error("Error Section in:", error);
+        return false;
+      } finally {
+        this.isTableLoading = false;
+      }
     },
   },
 
