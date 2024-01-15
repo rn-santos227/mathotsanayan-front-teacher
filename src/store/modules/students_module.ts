@@ -38,6 +38,29 @@ export const useStudentsModule = defineStore("students", {
       this.students = this.students.filter((item) => item.id !== student.id);
     },
 
+    async create(payload: Student): Promise<boolean> {
+      try {
+        this.isLoading = true;
+        const response = await authenticatedFetch(api.STUDENTS.CREATE, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        });
+
+        const data = await response.json();
+        const { student } = data;
+        this.addStudent(student);
+        return true;
+      } catch (error) {
+        console.error("Error Student in:", error);
+        return false;
+      } finally {
+        this.isLoading = false;
+      }
+    },
+
     async read(page = 1): Promise<boolean> {
       try {
         this.isTableLoading = true;
@@ -54,6 +77,57 @@ export const useStudentsModule = defineStore("students", {
         return false;
       } finally {
         this.isTableLoading = false;
+      }
+    },
+
+    async update(payload: Student): Promise<boolean> {
+      try {
+        this.isLoading = true;
+        const response = await authenticatedFetch(
+          `${api.STUDENTS.UPDATE}${payload.id}`,
+          {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          }
+        );
+        const data = await response.json();
+        const { student } = data;
+        this.updateStudent(student);
+        return true;
+      } catch (error) {
+        console.error("Error STudent in:", error);
+        return false;
+      } finally {
+        this.isLoading = false;
+      }
+    },
+
+    async delete(payload: Student): Promise<boolean> {
+      try {
+        this.isLoading = true;
+        const response = await authenticatedFetch(
+          `${api.STUDENTS.DELETE}${payload.id}`,
+          {
+            method: "DELETE",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          }
+        );
+
+        const data = await response.json();
+        const { student } = data;
+        this.deleteStudent(student);
+        return true;
+      } catch (error) {
+        console.error("Error Student in:", error);
+        return false;
+      } finally {
+        this.isLoading = false;
       }
     },
 
