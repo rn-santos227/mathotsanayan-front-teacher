@@ -13,6 +13,7 @@
             </v-col>
             <v-col class="d-flex">
               <v-spacer />
+              <CreateView />
             </v-col>
           </v-row>
         </v-card-title>
@@ -25,5 +26,6 @@
 </template>
 
 <script setup lang="ts">
+import CreateView from "./CreateView.vue";
 import TableView from "./TableView.vue";
 </script>
