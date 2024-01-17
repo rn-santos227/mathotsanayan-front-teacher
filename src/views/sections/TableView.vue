@@ -18,7 +18,10 @@
           <v-btn block color="purple-darken-3" variant="outlined">
             <v-icon size="large">mdi-dots-horizontal</v-icon>
             <v-menu activator="parent">
-              <v-list density="compact" variant="plain"> </v-list>
+              <v-list density="compact" variant="plain">
+                <UpdateView v-bind:section="item" />
+                <DeleteView v-bind:section="item" />
+              </v-list>
             </v-menu>
           </v-btn>
         </td>
@@ -34,6 +37,8 @@
 import { computed, onMounted, provide, ref } from "vue";
 import { useSectionsModule, useSchoolsModule } from "@/store";
 
+import UpdateView from "./UpdateView.vue";
+import DeleteView from "./DeleteView.vue";
 import SuccessDialogComponent from "@/components/dialogs/SuccessDialogComponent.vue";
 import ErrorDialogComponent from "@/components/dialogs/ErrorDialogComponent.vue";
 import LoadingDialogComponent from "@/components/dialogs/LoadingDialogComponent.vue";

@@ -14,10 +14,10 @@ export default {
   },
 
   COURSES: {
-    CREATE: `${BACKEND}teachers/courses/create`,
-    READ: `${BACKEND}teachers/courses`,
-    UPDATE: `${BACKEND}teachers/courses/`,
-    DELETE: `${BACKEND}teachers/courses/`,
+    CREATE: `${BACKEND}teacher/courses/create`,
+    READ: `${BACKEND}teacher/courses`,
+    UPDATE: `${BACKEND}teacher/courses/`,
+    DELETE: `${BACKEND}teacher/courses/`,
   },
 
   DASHBOARD: {
@@ -31,24 +31,24 @@ export default {
   },
 
   SCHOOLS: {
-    CREATE: `${BACKEND}teachers/schools/create`,
-    READ: `${BACKEND}teachers/schools`,
-    UPDATE: `${BACKEND}teachers/schools/`,
-    DELETE: `${BACKEND}teachers/schools/`,
+    CREATE: `${BACKEND}teacher/schools/create`,
+    READ: `${BACKEND}teacher/schools`,
+    UPDATE: `${BACKEND}teacher/schools/`,
+    DELETE: `${BACKEND}teacher/schools/`,
   },
 
   SECTIONS: {
-    CREATE: `${BACKEND}teachers/sections/create`,
-    READ: `${BACKEND}teachers/sections`,
-    UPDATE: `${BACKEND}teachers/sections/`,
-    DELETE: `${BACKEND}teachers/sections/`,
+    CREATE: `${BACKEND}teacher/sections/create`,
+    READ: `${BACKEND}teacher/sections`,
+    UPDATE: `${BACKEND}teacher/sections/`,
+    DELETE: `${BACKEND}teacher/sections/`,
   },
 
   STUDENTS: {
-    CREATE: `${BACKEND}teachers/students/create`,
-    READ: `${BACKEND}teachers/students`,
-    UPDATE: `${BACKEND}teachers/students/`,
-    DELETE: `${BACKEND}teachers/students/`,
-    SEARCH: `${BACKEND}teachers/students/search`,
+    CREATE: `${BACKEND}teacher/students/create`,
+    READ: `${BACKEND}teacher/students`,
+    UPDATE: `${BACKEND}teacher/students/`,
+    DELETE: `${BACKEND}teacher/students/`,
+    SEARCH: `${BACKEND}teacher/students/search`,
   },
 };

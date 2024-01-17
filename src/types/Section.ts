@@ -1,6 +1,5 @@
 import School from "./School";
 import Student from "./Student";
-import Teacher from "./Teacher";
 
 type Section = {
   id?: number;
@@ -10,7 +9,6 @@ type Section = {
   updated_at?: string;
   deleted_at?: string;
   school: number | string | School;
-  teacher?: Teacher;
   students?: Student[];
 };
 

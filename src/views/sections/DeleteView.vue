@@ -30,7 +30,7 @@
           ></v-icon>
           <h2 class="text-h4 mb-6 text-orange-darken-3">WARNING</h2>
           <span class="mx-auto">
-            Are you sure you want to delete this Student?
+            Are you sure you want to delete this Section?
           </span>
           <v-divider class="mb-2 mt-6" />
           <v-card-actions>
@@ -62,12 +62,12 @@
 
 <script setup lang="ts">
 import { inject, ref } from "vue";
-import { useStudentsModule } from "@/store";
+import { useSectionsModule } from "@/store";
 
-import Student from "@/types/Student";
+import Section from "@/types/Section";
 
 const props = defineProps<{
-  student: Student;
+  section: Section;
 }>();
 
 const dialog = ref<boolean>(false);
@@ -88,9 +88,9 @@ const error = inject("error", {
 });
 
 const confirm = async () => {
-  const response = await useStudentsModule().delete(props.student);
+  const response = await useSectionsModule().delete(props.section);
   if (response) {
-    success.value.show("Student has been successfully deleted.");
+    success.value.show("Section has been successfully deleted.");
     dialog.value = false;
   } else {
     error.value.show("The server has not able to process the request.");
