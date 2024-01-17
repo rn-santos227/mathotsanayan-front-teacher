@@ -17,8 +17,13 @@
           </v-row>
         </v-card-title>
       </v-card>
+      <v-card-text>
+        <TableView />
+      </v-card-text>
     </v-card>
   </v-container>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TableView from "./TableView.vue";
+</script>

@@ -1,4 +1,5 @@
 import School from "./School";
+import Student from "./Student";
 import Teacher from "./Teacher";
 
 type Section = {
@@ -10,6 +11,7 @@ type Section = {
   deleted_at?: string;
   school: number | string | School;
   teacher?: Teacher;
+  students?: Student[];
 };
 
 export default Section;
