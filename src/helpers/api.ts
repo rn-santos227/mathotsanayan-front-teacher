@@ -2,7 +2,7 @@ const BACKEND = `${process.env.VUE_APP_BACKEND}/api/`;
 
 export default {
   ANSWERS: {
-    READ: `${BACKEND}answers/`,
+    READ: `${BACKEND}teacher/answers/`,
   },
 
   AUTH: {
