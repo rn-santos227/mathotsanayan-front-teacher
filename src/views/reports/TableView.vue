@@ -107,6 +107,9 @@ import { useResultsModule } from "@/store";
 import { evaluateExam, secondsToMinutes } from "@/helpers/evaluation";
 import { getSectionName } from "@/helpers/instance";
 
+import InvalidateView from "./InvalidateView.vue";
+import ResultView from "./result/DialogView.vue";
+
 import SuccessDialogComponent from "@/components/dialogs/SuccessDialogComponent.vue";
 import ErrorDialogComponent from "@/components/dialogs/ErrorDialogComponent.vue";
 import LoadingDialogComponent from "@/components/dialogs/LoadingDialogComponent.vue";
