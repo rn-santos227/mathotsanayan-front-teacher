@@ -11,6 +11,7 @@
             density="compact"
             variant="outlined"
           />
+          <FilterView />
           <v-btn
             class="ml-4"
             variant="outlined"
@@ -107,6 +108,7 @@ import { useResultsModule } from "@/store";
 import { evaluateExam, secondsToMinutes } from "@/helpers/evaluation";
 import { getSectionName } from "@/helpers/instance";
 
+import FilterView from "./FilterView.vue";
 import InvalidateView from "./InvalidateView.vue";
 import ResultView from "./result/DialogView.vue";
 
