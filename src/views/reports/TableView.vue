@@ -2,7 +2,9 @@
   <v-card-text>
     <v-card variant="flat">
       <v-row class="mt-1">
-        <v-col> </v-col>
+        <v-col>
+          <GenerationView />
+        </v-col>
         <v-col class="d-flex">
           <v-text-field
             class="mr-4"
@@ -109,6 +111,7 @@ import { evaluateExam, secondsToMinutes } from "@/helpers/evaluation";
 import { getSectionName } from "@/helpers/instance";
 
 import FilterView from "./FilterView.vue";
+import GenerationView from "./GenerationView.vue";
 import InvalidateView from "./InvalidateView.vue";
 import ResultView from "./result/DialogView.vue";
 
