@@ -1,7 +1,21 @@
 <template>
+  <v-card variant="flat">
+    <v-row class="mt-1">
+      <v-spacer />
+      <v-text-field
+        class="mr-4"
+        v-model="search"
+        label="Search Student"
+        density="compact"
+        variant="outlined"
+      />
+    </v-row>
+  </v-card>
+  <v-divider />
   <v-data-table
     class="w-100"
     item-value="name"
+    :search="search"
     :items="courses"
     :headers="headers"
     :loading="useCoursesModule().isTableLoading"
@@ -59,6 +73,7 @@ const error = ref({
   },
 });
 
+const search = ref<string>("");
 const courseModule = useCoursesModule();
 const courses = computed<Course[]>(() => courseModule.getCourses);
 
