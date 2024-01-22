@@ -5,6 +5,11 @@ export default {
     READ: `${BACKEND}teacher/answers/`,
   },
 
+  AUDIT: {
+    READ: `${BACKEND}teacher/audit`,
+    SEARCH: `${BACKEND}teacher/audit/search`,
+  },
+
   AUTH: {
     AUTH: `${BACKEND}auth`,
     LOGIN: `${BACKEND}teacher/login`,
