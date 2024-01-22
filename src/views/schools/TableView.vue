@@ -1,6 +1,20 @@
 <template>
+  <v-card variant="flat">
+    <v-row class="mt-1">
+      <v-spacer />
+      <v-text-field
+        class="mr-4"
+        v-model="search"
+        label="Search Student"
+        density="compact"
+        variant="outlined"
+      />
+    </v-row>
+  </v-card>
+  <v-divider />
   <v-data-table
     class="w-100"
+    :search="search"
     :items="schools"
     :headers="headers"
     :loading="useSchoolsModule().isTableLoading"
@@ -58,6 +72,7 @@ const error = ref({
   },
 });
 
+const search = ref<string>("");
 const schoolModule = useSchoolsModule();
 const schools = computed<School[]>(() => schoolModule.getSchools);
 
