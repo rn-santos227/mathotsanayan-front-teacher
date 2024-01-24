@@ -1,4 +1,5 @@
 import Page from "@/interfaces/Page";
+import Search from "@/interfaces/Search";
 import Audit from "@/types/Audit";
 import api from "@/helpers/api";
 
@@ -39,6 +40,29 @@ export const useAuditModule = defineStore("audit", {
         return false;
       } finally {
         this.isTableLoading = false;
+      }
+    },
+
+    async search(payload: Search): Promise<boolean> {
+      try {
+        this.isTableLoading = true;
+        this.isLoading = true;
+        const response = await authenticatedFetch(
+          `${api.AUDIT.SEARCH}?category=${payload.category}&search=${payload.search}`
+        );
+        const data = await response.json();
+        const { audit } = data;
+        this.page.current_page = 1;
+        this.page.total = 1;
+        this.page.per_page = audit.length;
+        this.setAudit(audit);
+        return true;
+      } catch (error) {
+        console.error("Error Audit in:", error);
+        return false;
+      } finally {
+        this.isTableLoading = false;
+        this.isLoading = false;
       }
     },
   },
