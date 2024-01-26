@@ -10,6 +10,50 @@ export default [
     subpages: [],
   },
   {
+    text: "Courses",
+    page: "courses",
+    subpages: [
+      {
+        text: "Courses Table",
+        page: "courses-main",
+      },
+      {
+        text: "Courses Create",
+        page: "courses-create",
+      },
+      {
+        text: "Courses Update",
+        page: "courses-update",
+      },
+      {
+        text: "Courses Deletion",
+        page: "courses-delete",
+      },
+    ],
+  },
+  {
+    text: "Schools",
+    page: "schools",
+    subpages: [
+      {
+        text: "Schools Table",
+        page: "schools-main",
+      },
+      {
+        text: "Schools Create",
+        page: "schools-create",
+      },
+      {
+        text: "Schools Update",
+        page: "schools-update",
+      },
+      {
+        text: "Schools Deletion",
+        page: "schools-delete",
+      },
+    ],
+  },
+  {
     text: "Students",
     page: "students",
     subpages: [
