@@ -68,3 +68,9 @@ onMounted(async () => {
   resultCard.value.count = useDashboardModule().getDashboard.results;
 });
 </script>
+
+<style scoped>
+.card-width {
+  width: 180px;
+}
+</style>
