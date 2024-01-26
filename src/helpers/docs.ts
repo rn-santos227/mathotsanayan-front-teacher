@@ -54,11 +54,33 @@ export default [
     ],
   },
   {
+    text: "Sections",
+    page: "sections",
+    subpages: [
+      {
+        text: "Sections Table",
+        page: "sections-main",
+      },
+      {
+        text: "Sections Create",
+        page: "sections-create",
+      },
+      {
+        text: "Sections Update",
+        page: "sections-update",
+      },
+      {
+        text: "Sections Deletion",
+        page: "sections-delete",
+      },
+    ],
+  },
+  {
     text: "Students",
     page: "students",
     subpages: [
       {
-        text: "Students",
+        text: "Students Table",
         page: "students-main",
       },
       {
@@ -84,7 +106,7 @@ export default [
     page: "reports",
     subpages: [
       {
-        text: "Reports",
+        text: "Reports Table",
         page: "reports-main",
       },
       {
