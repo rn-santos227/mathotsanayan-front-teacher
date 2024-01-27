@@ -16,17 +16,10 @@ export const useDashboardModule = defineStore("dashboard", {
     },
 
     async read() {
-      try {
-        this.isLoading = true;
-        const response = await authenticatedFetch(api.DASHBOARD.READ);
-        const data = await response.json();
-        const { dashboard } = data;
-        this.setDashboard(dashboard);
-      } catch (error) {
-        console.error("Error Course in:", error);
-      } finally {
-        this.isLoading = false;
-      }
+      const response = await authenticatedFetch(api.DASHBOARD.READ);
+      const data = await response.json();
+      const { dashboard } = data;
+      this.setDashboard(dashboard);
     },
   },
 
