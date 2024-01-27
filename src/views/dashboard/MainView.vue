@@ -62,7 +62,10 @@ const resultCard = ref<DashboardCard>({
 
 onMounted(async () => {
   useDashboardModule().isLoading = true;
-  await Promise.all([useDashboardModule().read()]);
+  await Promise.all([
+    useDashboardModule().ratio(),
+    useDashboardModule().read(),
+  ]);
   schoolCard.value.count = useDashboardModule().getDashboard.schools;
   sectionCard.value.count = useDashboardModule().getDashboard.sections;
   studentCard.value.count = useDashboardModule().getDashboard.students;

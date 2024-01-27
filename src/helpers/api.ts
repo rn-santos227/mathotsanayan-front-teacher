@@ -26,6 +26,8 @@ export default {
   },
 
   DASHBOARD: {
+    MODULE: `${BACKEND}teacher/dashboard/modules`,
+    RATIO: `${BACKEND}teacher/dashboard/ratio`,
     READ: `${BACKEND}teacher/dashboard`,
   },
 

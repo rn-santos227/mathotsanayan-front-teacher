@@ -21,6 +21,10 @@ export const useDashboardModule = defineStore("dashboard", {
       const { dashboard } = data;
       this.setDashboard(dashboard);
     },
+
+    async ratio() {
+      authenticatedFetch(api.DASHBOARD.RATIO);
+    },
   },
 
   getters: {
