@@ -63,6 +63,7 @@ const resultCard = ref<DashboardCard>({
 onMounted(async () => {
   useDashboardModule().isLoading = true;
   await Promise.all([
+    useDashboardModule().modules(),
     useDashboardModule().ratio(),
     useDashboardModule().read(),
   ]);
@@ -77,5 +78,9 @@ onMounted(async () => {
 <style scoped>
 .card-width {
   width: 180px;
+}
+
+.card-width-pie {
+  width: 490px;
 }
 </style>
