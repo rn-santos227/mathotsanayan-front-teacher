@@ -38,7 +38,7 @@
             <td class="text-center">{{ resModule.passed }}</td>
             <td class="text-center">{{ resModule.failed }}</td>
             <td class="text-center">
-              {{ (resModule.passed / resModule.total) * 100 }}%
+              {{ ((resModule.passed / resModule.total) * 100).toFixed(2) }}%
             </td>
           </tr>
         </tbody>
