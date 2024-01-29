@@ -32,7 +32,7 @@
                   v-if="doc.subpages.length <= 0"
                   prepend-icon="mdi-book-multiple"
                   :title="doc.text"
-                  :value="doc.page"
+                  @click="updatePage(doc.page)"
                 />
                 <v-list-group v-else :key="key_1">
                   <template v-slot:activator="{ props }">
@@ -46,7 +46,7 @@
                     v-for="(subpage, key_2) in doc.subpages"
                     :key="key_2"
                     :title="subpage.text"
-                    :value="subpage.page"
+                    @click="updatePage(subpage.page)"
                   />
                 </v-list-group>
               </template>
@@ -65,8 +65,15 @@ import { ref } from "vue";
 import docs from "@/helpers/docs";
 
 const dialog = ref<boolean>(false);
+const page = ref<string>("intro");
+
 const close = () => {
   dialog.value = !dialog.value;
+  page.value = "intro";
+};
+
+const updatePage = (newPage: string) => {
+  page.value = newPage;
 };
 </script>
 
