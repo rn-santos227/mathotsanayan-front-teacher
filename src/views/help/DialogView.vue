@@ -23,9 +23,9 @@
           </v-btn>
         </v-card-actions>
       </v-card>
-      <div class="d-flex justify-space-around flex-wrap question-height">
+      <div class="d-flex justify-space-around flex-wrap">
         <v-row no-gutters>
-          <v-col cols="3" class="flex-grow-0">
+          <v-col cols="3" class="flex-grow-0 question-height">
             <v-list density="compact">
               <template v-for="(doc, key_1) in docs" :key="key_1">
                 <v-list-item
@@ -53,7 +53,7 @@
             </v-list>
           </v-col>
           <v-divider vertical />
-          <v-col class="flex-grow-1"> </v-col>
+          <v-col class="flex-grow-1 question-height"> </v-col>
         </v-row>
       </div>
     </v-card>
