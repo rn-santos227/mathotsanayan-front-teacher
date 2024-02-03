@@ -11,5 +11,19 @@
 </template>
 
 <script setup lang="ts">
+import { ref, watch } from "vue";
 import docs from "@/helpers/documentation/doc_sections";
+
+const props = defineProps<{
+  page: string;
+}>();
+
+const focusPage = ref(props.page);
+
+watch(
+  () => props.page,
+  (newValue) => {
+    focusPage.value = newValue;
+  }
+);
 </script>
