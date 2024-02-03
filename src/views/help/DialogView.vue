@@ -53,7 +53,34 @@
             </v-list>
           </v-col>
           <v-divider vertical />
-          <v-col class="flex-grow-1 question-height"> </v-col>
+          <v-col class="flex-grow-1 question-height">
+            <DocIntroView v-if="page === 'intro'" />
+            <DocDashboardView v-else-if="page === 'dahsboard'" />
+            <DocCoursesView
+              v-else-if="page.includes('courses')"
+              v-bind:page="page"
+            />
+            <DocSchoolsView
+              v-else-if="page.includes('schools')"
+              v-bind:page="page"
+            />
+            <DocSectionsView
+              v-else-if="page.includes('sections')"
+              v-bind:page="page"
+            />
+            <DocStudentsVue
+              v-else-if="page.includes('students')"
+              v-bind:page="page"
+            />
+            <DocReportsView
+              v-else-if="page.includes('reports')"
+              v-bind:page="page"
+            />
+            <DocAuditView
+              v-else-if="page.includes('audit')"
+              v-bind:page="page"
+            />
+          </v-col>
         </v-row>
       </div>
     </v-card>
@@ -63,6 +90,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import docs from "@/helpers/docs";
+
+import DocIntroView from "./documentation/DocIntroView.vue";
+import DocDashboardView from "./documentation/DocDashboardView.vue";
+import DocCoursesView from "./documentation/DocCoursesView.vue";
+import DocSchoolsView from "./documentation/DocSchoolsView.vue";
+import DocSectionsView from "./documentation/DocSectionsView.vue";
+import DocStudentsVue from "./documentation/DocStudentsVue.vue";
+import DocReportsView from "./documentation/DocReportsView.vue";
+import DocAuditView from "./documentation/DocAuditView.vue";
 
 const dialog = ref<boolean>(false);
 const page = ref<string>("intro");
