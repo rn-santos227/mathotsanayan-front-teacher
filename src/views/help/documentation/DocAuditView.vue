@@ -4,6 +4,9 @@
       MatHotSanayan Teacher Audit Trail
     </span>
     <v-divider class="my-2" />
+    <p class="ma-6">
+      {{ docs[0] }}
+    </p>
   </v-card-text>
 </template>
 
