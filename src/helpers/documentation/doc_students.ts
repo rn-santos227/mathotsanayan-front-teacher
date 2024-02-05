@@ -1,3 +1,3 @@
-const docs: string[] = [];
+const docs: string[] = [``];
 
 export default docs;

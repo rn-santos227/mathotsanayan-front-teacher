@@ -83,7 +83,7 @@
 
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from "vue";
-import { useAuditModule } from "@/store/modules/audit_module";
+import { useAuditModule } from "@/store";
 import { formatDate } from "@/helpers/utils";
 
 import DetailsView from "./DetailsView.vue";
