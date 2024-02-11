@@ -8,7 +8,7 @@ const headers: ReadonlyHeaders = [
     key: "activity",
   },
   {
-    title: "Table",
+    title: "Feature",
     align: "start",
     sortable: true,
     key: "table",
