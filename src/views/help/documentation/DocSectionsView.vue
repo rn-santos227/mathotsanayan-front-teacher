@@ -1,8 +1,8 @@
 <template>
   <v-card-text>
-    <div v-if="focusPage === 'section-main'">
+    <div v-if="focusPage === 'sections-main'">
       <span class="text-h5 font-weight-bold">
-        MatHotSanayan Teacher Section Table
+        MatHotSanayan Teacher Sections Table
       </span>
       <v-divider class="my-2" />
       <p class="ma-6">
@@ -10,23 +10,23 @@
       </p>
     </div>
 
-    <div v-if="focusPage === 'section-create'">
+    <div v-if="focusPage === 'sections-create'">
       <span class="text-h5 font-weight-bold">
-        MatHotSanayan Teacher Section Create
+        MatHotSanayan Teacher Sections Create
       </span>
       <v-divider class="my-2" />
     </div>
 
-    <div v-if="focusPage === 'section-update'">
+    <div v-if="focusPage === 'sections-update'">
       <span class="text-h5 font-weight-bold">
-        MatHotSanayan Teacher Section Update
+        MatHotSanayan Teacher Sections Update
       </span>
       <v-divider class="my-2" />
     </div>
 
-    <div v-if="focusPage === 'section-delete'">
+    <div v-if="focusPage === 'sections-delete'">
       <span class="text-h5 font-weight-bold">
-        MatHotSanayan Teacher Section Deletion
+        MatHotSanayan Teacher Sections Deletion
       </span>
       <v-divider class="my-2" />
     </div>
