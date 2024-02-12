@@ -10,7 +10,7 @@
       </p>
     </div>
 
-    <div v-if="focusPage === 'reports-details'">
+    <div v-if="focusPage === 'reports-search'">
       <span class="text-h5 font-weight-bold">
         MatHotSanayan Teacher Result Filter Search
       </span>

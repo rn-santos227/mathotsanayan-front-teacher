@@ -10,7 +10,7 @@
       </p>
     </div>
 
-    <div v-if="focusPage === 'courses-details'">
+    <div v-if="focusPage === 'courses-create'">
       <span class="text-h5 font-weight-bold">
         MatHotSanayan Teacher Courses Create
       </span>
