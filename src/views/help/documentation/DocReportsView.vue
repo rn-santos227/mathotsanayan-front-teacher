@@ -1,10 +1,49 @@
 <template>
   <v-card-text>
-    <span class="text-h5 font-weight-bold"> MatHotSanayan Teacher Report </span>
-    <v-divider class="my-2" />
-    <p class="ma-6">
-      {{ docs[0] }}
-    </p>
+    <div v-if="focusPage === 'reports-main'">
+      <span class="text-h5 font-weight-bold">
+        MatHotSanayan Teacher Reports Table
+      </span>
+      <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[0] }}
+      </p>
+    </div>
+
+    <div v-if="focusPage === 'reports-details'">
+      <span class="text-h5 font-weight-bold">
+        MatHotSanayan Teacher Result Filter Search
+      </span>
+      <v-divider class="my-2" />
+    </div>
+
+    <div v-if="focusPage === 'reports-generate'">
+      <span class="text-h5 font-weight-bold">
+        MatHotSanayan Teacher Result Generation
+      </span>
+      <v-divider class="my-2" />
+    </div>
+
+    <div v-if="focusPage === 'reports-details'">
+      <span class="text-h5 font-weight-bold">
+        MatHotSanayan Teacher Result Details
+      </span>
+      <v-divider class="my-2" />
+    </div>
+
+    <div v-if="focusPage === 'reports-answers'">
+      <span class="text-h5 font-weight-bold">
+        MatHotSanayan Teacher Answer List
+      </span>
+      <v-divider class="my-2" />
+    </div>
+
+    <div v-if="focusPage === 'reports-invalidate'">
+      <span class="text-h5 font-weight-bold">
+        MatHotSanayan Teacher Result Invalidation
+      </span>
+      <v-divider class="my-2" />
+    </div>
   </v-card-text>
 </template>
 
