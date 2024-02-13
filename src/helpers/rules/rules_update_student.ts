@@ -1,10 +1,4 @@
-import {
-  required,
-  email,
-  maxLength,
-  minLength,
-  sameAs,
-} from "@vuelidate/validators";
+import { required, email, maxLength } from "@vuelidate/validators";
 import { computed, ref } from "vue";
 
 const rules_password = ref("");
@@ -31,13 +25,6 @@ const rules = computed(() => {
       required,
       email,
       maxLength: maxLength(100),
-    },
-    password: {
-      maxLength: maxLength(50),
-      minLength: minLength(6),
-    },
-    password_confirm: {
-      sameAsPassword: sameAs(rules_password),
     },
     course: {
       required,
