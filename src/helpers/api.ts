@@ -54,6 +54,7 @@ export default {
   STUDENTS: {
     CREATE: `${BACKEND}teacher/students/create`,
     READ: `${BACKEND}teacher/students`,
+    RESET: `${BACKEND}teacher/reset/`,
     UPDATE: `${BACKEND}teacher/students/`,
     DELETE: `${BACKEND}teacher/students/`,
     SEARCH: `${BACKEND}teacher/students/search`,
