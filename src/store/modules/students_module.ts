@@ -98,7 +98,7 @@ export const useStudentsModule = defineStore("students", {
         this.updateStudent(student);
         return true;
       } catch (error) {
-        console.error("Error STudent in:", error);
+        console.error("Error Student in:", error);
         return false;
       } finally {
         this.isLoading = false;
@@ -145,10 +145,35 @@ export const useStudentsModule = defineStore("students", {
         this.setStudents(students);
         return true;
       } catch (error) {
-        console.error("Error Students in:", error);
+        console.error("Error Student in:", error);
         return false;
       } finally {
         this.isTableLoading = false;
+      }
+    },
+
+    async reset(payload: Student): Promise<boolean> {
+      try {
+        this.isLoading = true;
+        const response = await authenticatedFetch(
+          `${api.STUDENTS.RESET}${payload.id}`,
+          {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          }
+        );
+        const data = await response.json();
+        const { student } = data;
+        this.updateStudent(student);
+        return true;
+      } catch (error) {
+        console.error("Error Students in:", error);
+        return false;
+      } finally {
+        this.isLoading = false;
       }
     },
   },
