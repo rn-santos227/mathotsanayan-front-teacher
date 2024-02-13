@@ -1,9 +1,9 @@
 const docs: string[] = [
-  `Welcome to MatHOTSanayan, the dedicated platform for managing Computer
-  Aided Assessment (CAA) tasks, tailored specifically for teachers. In this
-  guide, we'll explore the core functionalities designed to empower
-  educators in efficiently overseeing their classroom activities. The
-  teacher dashboard serves as a central hub, offering real-time insights
+  `Welcome to MatHOTSanayan Teacher Application, the dedicated platform for 
+  managing Computer Aided Assessment (CAA) tasks, tailored specifically for 
+  teachers. In this guide, we'll explore the core functionalities designed 
+  to empower educators in efficiently overseeing their classroom activities. 
+  The teacher dashboard serves as a central hub, offering real-time insights
   into examination progress and results of students assigned to them. With
   an intuitive interface, teachers can seamlessly navigate through vital
   performance indicators, ensuring informed decision-making throughout their
