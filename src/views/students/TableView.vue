@@ -59,6 +59,7 @@
               <v-menu activator="parent">
                 <v-list density="compact" variant="plain">
                   <UpdateView v-bind:student="item" />
+                  <PasswordView v-if="item.id" v-bind:id="item.id" />
                   <DeleteView v-bind:student="item" />
                 </v-list>
               </v-menu>
@@ -100,6 +101,7 @@ import { getSchoolName, getSectionName } from "@/helpers/instance";
 
 import FilterView from "./FilterView.vue";
 import UpdateView from "./UpdateView.vue";
+import PasswordView from "./PasswordView.vue";
 import DeleteView from "./DeleteView.vue";
 
 import SuccessDialogComponent from "@/components/dialogs/SuccessDialogComponent.vue";

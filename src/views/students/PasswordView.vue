@@ -1,7 +1,7 @@
 <template>
   <v-list-item @click.prevent>
     <v-list-item-title class="text-button">
-      <v-icon icon="mdi-key"></v-icon> Password
+      <v-icon icon="mdi-lock-reset"></v-icon> Password
     </v-list-item-title>
     <v-dialog
       class="ma-auto"
@@ -17,7 +17,7 @@
           variant="flat"
         >
           <v-card-actions class="mx-4">
-            <span class="text-h6"> Reset Password </span>
+            <span class="text-h6"> Reset Student Password </span>
             <v-spacer />
             <v-btn
               density="comfortable"
