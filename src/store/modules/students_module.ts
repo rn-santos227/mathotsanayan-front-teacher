@@ -1,6 +1,7 @@
-import Student from "@/types/Student";
+import Password from "@/interfaces/Password";
 import Page from "@/interfaces/Page";
 import Search from "@/interfaces/Search";
+import Student from "@/types/Student";
 import api from "@/helpers/api";
 
 import { defineStore } from "pinia";
@@ -152,11 +153,11 @@ export const useStudentsModule = defineStore("students", {
       }
     },
 
-    async reset(payload: Student): Promise<boolean> {
+    async reset(payload: Password, id: number): Promise<boolean> {
       try {
         this.isLoading = true;
         const response = await authenticatedFetch(
-          `${api.STUDENTS.RESET}${payload.id}`,
+          `${api.STUDENTS.RESET}${id}`,
           {
             method: "PATCH",
             headers: {
