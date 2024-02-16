@@ -31,6 +31,14 @@ export default {
     READ: `${BACKEND}teacher/dashboard`,
   },
 
+  QUESTIONS: {
+    READ: `${BACKEND}teacher/questions/`,
+  },
+
+  MODULES: {
+    READ: `${BACKEND}teacher/modules`,
+  },
+
   RESULTS: {
     READ: `${BACKEND}teacher/results`,
     SEARCH: `${BACKEND}teacher/results/search`,
@@ -58,5 +66,9 @@ export default {
     UPDATE: `${BACKEND}teacher/students/`,
     DELETE: `${BACKEND}teacher/students/`,
     SEARCH: `${BACKEND}teacher/students/search`,
+  },
+
+  TEST: {
+    SUBMIT: `${BACKEND}teacher/test/`,
   },
 };
