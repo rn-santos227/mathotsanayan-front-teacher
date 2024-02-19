@@ -5,6 +5,7 @@ import AuditView from "../views/audit/MainView.vue";
 import AuthView from "../views/auth/MainView.vue";
 import CoursesView from "../views/courses/MainView.vue";
 import DashboardView from "../views/dashboard/MainView.vue";
+import ModuleView from "../views/modules/MainView.vue";
 import ReportsView from "../views/reports/MainView.vue";
 import SchoolsView from "../views/schools/MainView.vue";
 import SectionsView from "../views/sections/MainView.vue";
@@ -31,6 +32,14 @@ const routes: Array<RouteRecordRaw> = [
     path: "/courses",
     name: "courses",
     component: CoursesView,
+    meta: {
+      forAuth: true,
+    },
+  },
+  {
+    path: "/modules",
+    name: "reports",
+    component: ModuleView,
     meta: {
       forAuth: true,
     },
