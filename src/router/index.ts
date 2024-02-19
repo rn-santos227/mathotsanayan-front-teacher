@@ -38,7 +38,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/modules",
-    name: "reports",
+    name: "modules",
     component: ModuleView,
     meta: {
       forAuth: true,

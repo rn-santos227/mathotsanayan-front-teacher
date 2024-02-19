@@ -11,14 +11,14 @@
             <v-col>
               <span class="text-h5 font-weight-bold"> Modules Manager </span>
             </v-col>
-            <v-col class="d-flex">
-              <v-spacer />
-            </v-col>
           </v-row>
         </v-card-title>
       </v-card>
+      <TableView />
     </v-card>
   </v-container>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TableView from "./TableView.vue";
+</script>
