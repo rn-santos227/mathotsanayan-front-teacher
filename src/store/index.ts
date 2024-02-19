@@ -4,6 +4,8 @@ import { useAuditModule } from "./modules/audit_module";
 import { useAuthModule } from "./modules/auth_module";
 import { useCoursesModule } from "./modules/courses_module";
 import { useDashboardModule } from "./modules/dashboard_module";
+import { useModulesModule } from "./modules/modules_module";
+import { useQuestionsModule } from "./modules/questions_module";
 import { useResultsModule } from "./modules/results_module";
 import { useSchoolsModule } from "./modules/schools_module";
 import { useSectionsModule } from "./modules/sections_module";
@@ -17,6 +19,8 @@ export {
   useAuthModule,
   useCoursesModule,
   useDashboardModule,
+  useModulesModule,
+  useQuestionsModule,
   useResultsModule,
   useSchoolsModule,
   useSectionsModule,
