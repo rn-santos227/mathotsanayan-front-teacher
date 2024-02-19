@@ -37,6 +37,7 @@ export default {
 
   MODULES: {
     READ: `${BACKEND}teacher/modules`,
+    SEARCH: `${BACKEND}teacher/modules/search`,
   },
 
   RESULTS: {
