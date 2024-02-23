@@ -46,6 +46,10 @@ export default {
     INVALIDATE: `${BACKEND}teacher/results/`,
   },
 
+  SCHOOLS: {
+    READ: `${BACKEND}teacher/schools`,
+  },
+
   SECTIONS: {
     CREATE: `${BACKEND}teacher/sections/create`,
     READ: `${BACKEND}teacher/sections`,

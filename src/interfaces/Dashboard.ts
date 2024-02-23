@@ -1,7 +1,7 @@
 interface Dashboard {
   sections: number;
   results: number;
-  schools: number;
+  modules: number;
   students: number;
 }
 export default Dashboard;

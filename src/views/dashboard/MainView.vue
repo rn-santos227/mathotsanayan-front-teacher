@@ -3,7 +3,7 @@
     <div class="d-flex justify-space-around flex-wrap">
       <DashboardCardComponent
         class="flex-grow-1 card-width"
-        v-bind:card="schoolCard"
+        v-bind:card="moduleCard"
       />
       <DashboardCardComponent
         class="flex-grow-1 card-width"
@@ -34,16 +34,16 @@ import DashboardPieGraphComponent from "@/components/dashboard/DashboardPieGraph
 import DashboardTableComponent from "@/components/dashboard/DashboardTableComponent.vue";
 import DashboardCard from "@/interfaces/DashboardCard";
 
-const schoolCard = ref<DashboardCard>({
-  count: useDashboardModule().getDashboard.schools,
-  title: "Total Schools",
-  link: "/schools",
-  color: "primary",
-  icon: "mdi-school",
+const moduleCard = ref<DashboardCard>({
+  count: useDashboardModule().getDashboard.modules,
+  title: "Total Modules",
+  link: "/modules",
+  color: "indigo",
+  icon: "mdi-text-box-check",
 });
 
 const sectionCard = ref<DashboardCard>({
-  count: useDashboardModule().getDashboard.schools,
+  count: useDashboardModule().getDashboard.sections,
   title: "Teacher Sections",
   link: "/sections",
   color: "purple",
@@ -73,7 +73,7 @@ onMounted(async () => {
     useDashboardModule().ratio(),
     useDashboardModule().read(),
   ]);
-  schoolCard.value.count = useDashboardModule().getDashboard.schools;
+  moduleCard.value.count = useDashboardModule().getDashboard.modules;
   sectionCard.value.count = useDashboardModule().getDashboard.sections;
   studentCard.value.count = useDashboardModule().getDashboard.students;
   resultCard.value.count = useDashboardModule().getDashboard.results;
