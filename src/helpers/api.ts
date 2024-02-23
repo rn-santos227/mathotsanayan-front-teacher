@@ -46,13 +46,6 @@ export default {
     INVALIDATE: `${BACKEND}teacher/results/`,
   },
 
-  SCHOOLS: {
-    CREATE: `${BACKEND}teacher/schools/create`,
-    READ: `${BACKEND}teacher/schools`,
-    UPDATE: `${BACKEND}teacher/schools/`,
-    DELETE: `${BACKEND}teacher/schools/`,
-  },
-
   SECTIONS: {
     CREATE: `${BACKEND}teacher/sections/create`,
     READ: `${BACKEND}teacher/sections`,
