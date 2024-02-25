@@ -23,7 +23,6 @@
           <td class="text-left">
             <ImageComponent
               class="my-4"
-              v-bind:id="item.id"
               v-bind:file="item.file"
               v-bind:height="150"
               v-bind:width="150"
@@ -45,7 +44,9 @@
             <v-btn block color="purple-darken-3" variant="outlined">
               <v-icon size="large">mdi-dots-horizontal</v-icon>
               <v-menu activator="parent" persistent>
-                <v-list density="compact" variant="plain"> </v-list>
+                <v-list density="compact" variant="plain">
+                  <TestView v-bind:question="item" />
+                </v-list>
               </v-menu>
             </v-btn>
           </td>
@@ -60,6 +61,8 @@ import { computed, onMounted, ref } from "vue";
 import ImageComponent from "@/components/ImageComponent.vue";
 
 import { useQuestionsModule } from "@/store";
+
+import TestView from "./TestView.vue";
 
 import Question from "@/types/Question";
 import headers from "@/helpers/headers/header_questions";
