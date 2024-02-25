@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog">
+  <v-dialog v-model="dialog" persistent>
     <v-sheet
       class="ma-auto text-center mx-auto"
       elevation="12"
@@ -21,7 +21,7 @@
         icon="mdi-close-circle"
         size="112"
       ></v-icon>
-      <h2 class="text-h4 mb-6 text-red-darken-4">ANSWER IS WRONG</h2>
+      <h2 class="text-h5 mb-6 text-red-darken-4">THE ANSWER IS WRONG</h2>
       <div class="mx-6">
         <span>
           {{ text }}
@@ -45,8 +45,11 @@ import { ref } from "vue";
 const dialog = ref<boolean>(false);
 const text = ref<string>("");
 
+const emit = defineEmits(["confirm"]);
+
 const confirm = () => {
   dialog.value = false;
+  emit("confirm");
 };
 
 const show = (correct: Correct) => {
