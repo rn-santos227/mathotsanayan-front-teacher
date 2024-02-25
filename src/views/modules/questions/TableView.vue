@@ -23,6 +23,7 @@
           <td class="text-left">
             <ImageComponent
               class="my-4"
+              v-bind:id="item.id"
               v-bind:file="item.file"
               v-bind:height="150"
               v-bind:width="150"

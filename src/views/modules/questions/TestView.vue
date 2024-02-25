@@ -76,6 +76,7 @@
                   <ImageComponent
                     class="mx-auto"
                     v-if="option.file"
+                    v-bind:id="props.question.id"
                     v-bind:file="option.file"
                     v-bind:height="200"
                     v-bind:width="250"
