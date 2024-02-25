@@ -38,7 +38,7 @@
       :loading="useModulesModule().isTableLoading"
       :page="useModulesModule().page.current_page"
     >
-      <template v-slot:item="{ item }">
+      <template v-slot:item="{ item, index }">
         <tr>
           <td class="text-xs-left">
             {{ item.name }}
@@ -53,7 +53,9 @@
             <v-btn block color="purple-darken-3" variant="outlined">
               <v-icon size="large">mdi-dots-horizontal</v-icon>
               <v-menu activator="parent">
-                <v-list density="compact" variant="plain"> </v-list>
+                <v-list density="compact" variant="plain">
+                  <QuestionView v-bind:module="item" v-bind:index="index" />
+                </v-list>
               </v-menu>
             </v-btn>
           </td>
@@ -85,6 +87,8 @@
 import { computed, onMounted, provide, ref, watch } from "vue";
 import { useModulesModule } from "@/store";
 import { getSubjectName } from "@/helpers/instance";
+
+import QuestionView from "./questions/DialogView.vue";
 
 import SuccessDialogComponent from "@/components/dialogs/SuccessDialogComponent.vue";
 import ErrorDialogComponent from "@/components/dialogs/ErrorDialogComponent.vue";

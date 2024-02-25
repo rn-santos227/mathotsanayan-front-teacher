@@ -10,6 +10,7 @@ import { useResultsModule } from "./modules/results_module";
 import { useSchoolsModule } from "./modules/schools_module";
 import { useSectionsModule } from "./modules/sections_module";
 import { useStudentsModule } from "./modules/students_module";
+import { useTestModule } from "./modules/test_module";
 
 const pinia = createPinia();
 export {
@@ -25,4 +26,5 @@ export {
   useSchoolsModule,
   useSectionsModule,
   useStudentsModule,
+  useTestModule,
 };
