@@ -30,6 +30,11 @@
           </v-card-actions>
         </v-card>
         <v-divider />
+        <TableView
+          v-bind:questions="props.module.questions"
+          v-bind:module="props.module"
+          v-bind:index="index"
+        />
       </v-card>
     </v-dialog>
   </v-list-item>
@@ -45,11 +50,12 @@ import SuccessDialogComponent from "@/components/dialogs/SuccessDialogComponent.
 import ErrorDialogComponent from "@/components/dialogs/ErrorDialogComponent.vue";
 import LoadingDialogComponent from "@/components/dialogs/LoadingDialogComponent.vue";
 
+import TableView from "./TableView.vue";
+
 import { useQuestionsModule } from "@/store";
 
 import Module from "@/types/Module";
 
-const tabs = ref<number>(0);
 const dialog = ref<boolean>(false);
 const props = defineProps<{
   module: Module;

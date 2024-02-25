@@ -31,6 +31,10 @@ export default {
     READ: `${BACKEND}teacher/dashboard`,
   },
 
+  IMAGE: {
+    IMAGE: `${BACKEND}image`,
+  },
+
   QUESTIONS: {
     READ: `${BACKEND}teacher/questions/`,
   },
