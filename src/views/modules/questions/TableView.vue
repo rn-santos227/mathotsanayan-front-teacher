@@ -35,6 +35,12 @@
           <td class="text-left">
             {{ item.type }}
           </td>
+          <td class="text-left">
+            {{ item?.corrects.length }}
+          </td>
+          <td class="text-left">
+            {{ item?.options.length }}
+          </td>
           <td>
             <v-btn block color="purple-darken-3" variant="outlined">
               <v-icon size="large">mdi-dots-horizontal</v-icon>

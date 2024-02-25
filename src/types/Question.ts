@@ -1,5 +1,7 @@
 import Subject from "./Subject";
 import Module from "./Module";
+import Option from "./Option";
+import Correct from "./Correct";
 
 type Question = {
   id: number;
@@ -9,6 +11,8 @@ type Question = {
   created_at: string;
   updated_at: string;
   deleted_at: string;
+  options: Option[];
+  corrects: Correct[];
   module: number | Module;
   subject: number | Subject;
 };
