@@ -56,12 +56,12 @@
           <v-col class="flex-grow-1 question-height">
             <DocIntroView v-if="page === 'intro'" />
             <DocDashboardView v-else-if="page === 'dahsboard'" />
-            <DocCoursesView
-              v-else-if="page.includes('courses')"
+            <DocModuleView
+              v-else-if="page.includes('modules')"
               v-bind:page="page"
             />
-            <DocSchoolsView
-              v-else-if="page.includes('schools')"
+            <DocCoursesView
+              v-else-if="page.includes('courses')"
               v-bind:page="page"
             />
             <DocSectionsView
@@ -93,8 +93,8 @@ import docs from "@/helpers/docs";
 
 import DocIntroView from "./documentation/DocIntroView.vue";
 import DocDashboardView from "./documentation/DocDashboardView.vue";
+import DocModuleView from "./documentation/DocModuleView.vue";
 import DocCoursesView from "./documentation/DocCoursesView.vue";
-import DocSchoolsView from "./documentation/DocSchoolsView.vue";
 import DocSectionsView from "./documentation/DocSectionsView.vue";
 import DocStudentsVue from "./documentation/DocStudentsVue.vue";
 import DocReportsView from "./documentation/DocReportsView.vue";
