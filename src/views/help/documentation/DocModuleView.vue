@@ -1,6 +1,6 @@
 <template>
   <v-card-text>
-    <div v-if="focusPage === 'students-main'">
+    <div v-if="focusPage === 'modules-main'">
       <span class="text-h5 font-weight-bold">
         MatHotSanayan Teacher Modules Table
       </span>
@@ -10,14 +10,14 @@
       </p>
     </div>
 
-    <div v-if="focusPage === 'students-search'">
+    <div v-if="focusPage === 'modules-questions'">
       <span class="text-h5 font-weight-bold">
         MatHotSanayan Teacher Modules Questions List
       </span>
       <v-divider class="my-2" />
     </div>
 
-    <div v-if="focusPage === 'students-create'">
+    <div v-if="focusPage === 'modules-test'">
       <span class="text-h5 font-weight-bold">
         MatHotSanayan Teacher Modules Question Test
       </span>

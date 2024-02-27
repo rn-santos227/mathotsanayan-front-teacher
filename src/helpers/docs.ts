@@ -10,6 +10,24 @@ export default [
     subpages: [],
   },
   {
+    text: "Modules",
+    page: "modules",
+    subpages: [
+      {
+        text: "Modules Table",
+        page: "modules-main",
+      },
+      {
+        text: "Modules Questions",
+        page: "modules-questions",
+      },
+      {
+        text: "Modules Test",
+        page: "modules-test",
+      },
+    ],
+  },
+  {
     text: "Courses",
     page: "courses",
     subpages: [
@@ -28,28 +46,6 @@ export default [
       {
         text: "Courses Deletion",
         page: "courses-delete",
-      },
-    ],
-  },
-  {
-    text: "Schools",
-    page: "schools",
-    subpages: [
-      {
-        text: "Schools Table",
-        page: "schools-main",
-      },
-      {
-        text: "Schools Create",
-        page: "schools-create",
-      },
-      {
-        text: "Schools Update",
-        page: "schools-update",
-      },
-      {
-        text: "Schools Deletion",
-        page: "schools-delete",
       },
     ],
   },
