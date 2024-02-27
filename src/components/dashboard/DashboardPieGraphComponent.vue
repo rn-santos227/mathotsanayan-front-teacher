@@ -2,7 +2,7 @@
   <v-card class="ma-4" elevation="3">
     <v-card-title>
       <span class="text-h6 font-weight-bold text-purple-darken-3">
-        Module Passed-Failed Ratio
+        Modules Passed-Failed Ratio
       </span>
     </v-card-title>
     <v-divider />

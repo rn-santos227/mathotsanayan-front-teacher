@@ -61,7 +61,7 @@
                 <v-textarea
                   rows="3"
                   v-model.trim="state.description"
-                  label="Sectopm Description/Notes"
+                  label="Section Description/Notes"
                   density="compact"
                   variant="outlined"
                 />

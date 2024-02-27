@@ -36,7 +36,7 @@
               <v-col>
                 <v-text-field
                   v-model.trim="v$.name.$model"
-                  label="Course Name"
+                  label="Section Name"
                   density="compact"
                   variant="outlined"
                   :error="v$.name.$error"
@@ -65,7 +65,7 @@
                 <v-textarea
                   rows="3"
                   v-model.trim="state.description"
-                  label="Course Description/Notes"
+                  label="Section Description/Notes"
                   density="compact"
                   variant="outlined"
                 />

@@ -75,7 +75,7 @@
                 <v-autocomplete
                   v-model.trim="v$.course.$model"
                   prepend-inner-icon="mdi-certificate"
-                  label="Student Course"
+                  label="Course"
                   density="compact"
                   variant="outlined"
                   item-title="name"
@@ -91,7 +91,7 @@
                 <v-autocomplete
                   v-model.trim="v$.school.$model"
                   prepend-inner-icon="mdi-school"
-                  label="Student School"
+                  label="School"
                   density="compact"
                   variant="outlined"
                   item-title="name"
@@ -107,7 +107,7 @@
                 <v-autocomplete
                   v-model.trim="v$.section.$model"
                   prepend-inner-icon="mdi-chair-school"
-                  label="Student Section"
+                  label="Section"
                   density="compact"
                   variant="outlined"
                   item-title="name"

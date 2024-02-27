@@ -31,7 +31,7 @@ export default [
     activator: false,
   },
   {
-    text: "Reports",
+    text: "Results",
     icon: "mdi-sticker-check-outline",
     route: "/reports",
     activator: false,

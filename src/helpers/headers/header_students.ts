@@ -14,7 +14,7 @@ const headers: ReadonlyHeaders = [
     key: "section.name",
   },
   {
-    title: "Student Email",
+    title: "Email Address",
     align: "start",
     sortable: true,
     key: "email",

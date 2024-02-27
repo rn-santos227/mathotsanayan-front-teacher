@@ -44,7 +44,7 @@ const moduleCard = ref<DashboardCard>({
 
 const sectionCard = ref<DashboardCard>({
   count: useDashboardModule().getDashboard.sections,
-  title: "Teacher Sections",
+  title: "Total Sections",
   link: "/sections",
   color: "purple",
   icon: "mdi-chair-school",
@@ -52,7 +52,7 @@ const sectionCard = ref<DashboardCard>({
 
 const studentCard = ref<DashboardCard>({
   count: useDashboardModule().getDashboard.students,
-  title: "Teacher Students",
+  title: "Total Students",
   link: "/students",
   color: "deep-purple",
   icon: "mdi-account-school",
@@ -60,7 +60,7 @@ const studentCard = ref<DashboardCard>({
 
 const resultCard = ref<DashboardCard>({
   count: useDashboardModule().getDashboard.results,
-  title: "Students Results",
+  title: "Total Results",
   link: "/reports",
   color: "indigo",
   icon: "mdi-sticker-check-outline",

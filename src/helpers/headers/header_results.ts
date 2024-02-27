@@ -8,13 +8,13 @@ const headers: ReadonlyHeaders = [
     key: "student.full_name",
   },
   {
-    title: "Student Section",
+    title: "Section",
     align: "start",
     sortable: true,
     key: "student.section.name",
   },
   {
-    title: "Module Name",
+    title: "Module Title",
     align: "start",
     sortable: true,
     key: "module.name",
@@ -27,14 +27,14 @@ const headers: ReadonlyHeaders = [
     width: "150",
   },
   {
-    title: "Score Result",
+    title: "Score",
     align: "start",
     sortable: false,
     key: "score",
     width: "140",
   },
   {
-    title: "Grade",
+    title: "Remarks",
     align: "start",
     sortable: false,
     key: "grade",

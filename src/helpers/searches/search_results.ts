@@ -2,7 +2,7 @@ import Category from "@/interfaces/Category";
 
 const search_list: Array<Category> = [
   {
-    text: "Module Name",
+    text: "Module Title",
     value: "module.name",
   },
   {
@@ -10,16 +10,20 @@ const search_list: Array<Category> = [
     value: "student.full_name",
   },
   {
-    text: "Student School",
+    text: "School",
     value: "student.school",
   },
   {
-    text: "Student Section",
+    text: "Section",
     value: "student.section",
   },
   {
-    text: "Subject Name",
+    text: "Name",
     value: "subject.name",
+  },
+  {
+    text: "Course",
+    value: "course.name",
   },
 ];
 export default search_list;
