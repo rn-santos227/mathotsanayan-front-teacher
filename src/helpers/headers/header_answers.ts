@@ -2,13 +2,13 @@ import type { VDataTable } from "vuetify/lib/components/index.mjs";
 type ReadonlyHeaders = InstanceType<typeof VDataTable>["headers"];
 const headers: ReadonlyHeaders = [
   {
-    title: "Evaluation",
+    title: "Response Category",
     align: "start",
     sortable: true,
     key: "grade.evaluation",
   },
   {
-    title: "Answer Content",
+    title: "Response",
     align: "start",
     sortable: false,
     key: "content",
@@ -21,13 +21,13 @@ const headers: ReadonlyHeaders = [
     key: "question.content",
   },
   {
-    title: "Attempts",
+    title: "Attempt Number",
     align: "start",
     sortable: true,
     key: "attempts",
   },
   {
-    title: "Time",
+    title: "Total Time",
     align: "start",
     sortable: true,
     key: "timer",

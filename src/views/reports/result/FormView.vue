@@ -36,7 +36,7 @@
             evaluateExam(props.result) === 'Passed' ? 'green' : 'red'
           }`"
           v-model.trim="grade"
-          label="Exam Result"
+          label="Remarks"
           variant="outlined"
           hide-details
           readonly

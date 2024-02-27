@@ -45,7 +45,7 @@
             <div class="ma-2">
               <ResultComponent
                 v-bind:color="'teal'"
-                v-bind:title="'Grade'"
+                v-bind:title="'Percentage Grade'"
                 v-bind:data="`${grade(props.result).toFixed(2)}%`"
                 v-bind:value="grade(props.result)"
               />
