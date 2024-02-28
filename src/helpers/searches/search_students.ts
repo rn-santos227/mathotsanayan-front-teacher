@@ -6,6 +6,10 @@ const search_list: Array<Category> = [
     value: "full_name",
   },
   {
+    text: "Course",
+    value: "course.name",
+  },
+  {
     text: "Email Address",
     value: "email",
   },
@@ -16,10 +20,6 @@ const search_list: Array<Category> = [
   {
     text: "Section",
     value: "section.name",
-  },
-  {
-    text: "Course",
-    value: "course.name",
   },
 ];
 export default search_list;
