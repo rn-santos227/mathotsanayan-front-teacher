@@ -11,7 +11,7 @@ const search_list: Array<Category> = [
   },
   {
     text: "Course",
-    value: "course.name",
+    value: "student.course",
   },
   {
     text: "School",
