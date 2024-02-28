@@ -15,6 +15,20 @@ const docs: string[] = [
   ` Generating randomized problems prevents students from relying on
   memorization and encourages them to develop a thorough understanding
   of concepts, promoting true mastery of the material.`,
+
+  ` The platform allows teachers to monitor the student's progress over
+  time by tracking their performance on various assessments. This
+  process enables teachers to identify areas where students excel and
+  areas that require improvement, facilitating targeted interventions to
+  support their academic growth.`,
+
+  ` Being accessible online allows teachers to access the platform at
+  their convenience, whether at school, home, or on the go.`,
+
+  `Join MatHOTSanayan in transforming mathematics education. Inspire a
+  generation of confident, analytical, and proficient problem solvers.
+  Elevate teaching with MatHOTSanayan - where Math, HOTS, and Sanayan
+  converge for academic excellence.`,
 ];
 
 export default docs;

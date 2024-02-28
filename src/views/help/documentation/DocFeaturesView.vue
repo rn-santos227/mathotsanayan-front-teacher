@@ -32,57 +32,15 @@
       </li>
       <li class="my-2">
         <p>
-          <b>Interactive Practice Problems:</b>
-          <span>{{ docs[4] }}</span>
-        </p>
-      </li>
-      <li class="my-2">
-        <p>
-          <b>Instant Feedback:</b>
-          <span>{{ docs[5] }}</span>
-        </p>
-      </li>
-      <li class="my-2">
-        <p>
-          <b>Sample Solutions:</b>
-          <span>{{ docs[6] }}</span>
-        </p>
-      </li>
-      <li class="my-2">
-        <p>
-          <b>Triple Try Challenge:</b>
-          <span>{{ docs[7] }}</span>
-        </p>
-      </li>
-      <li class="my-2">
-        <p>
-          <b>Sequential Module Unlocking:</b>
-          <span>{{ docs[8] }}</span>
-        </p>
-      </li>
-      <li class="my-2">
-        <p>
-          <b>Progress Tracking:</b>
-          <span>{{ docs[9] }}</span>
-        </p>
-      </li>
-      <li class="my-2">
-        <p>
           <b>Accessible Anytime, Anywhere:</b>
-          <span>{{ docs[10] }}</span>
-        </p>
-      </li>
-      <li class="my-2">
-        <p>
-          <b>Mobile Compatibility:</b>
-          <span>{{ docs[11] }}</span>
+          <span>{{ docs[4] }}</span>
         </p>
       </li>
     </ul>
 
     <span class="mx-6 my-2 font-weight-bold"> Get Started Today! </span>
     <p class="mx-6 my-2">
-      {{ docs[11] }}
+      {{ docs[5] }}
     </p>
   </v-card-text>
 </template>
