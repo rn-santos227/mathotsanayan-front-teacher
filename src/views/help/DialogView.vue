@@ -55,6 +55,7 @@
           <v-divider vertical />
           <v-col class="flex-grow-1 question-height">
             <DocIntroView v-if="page === 'intro'" />
+            <DocFeaturesView v-if="page === 'features'" />
             <DocDashboardView v-else-if="page === 'dahsboard'" />
             <DocModuleView
               v-else-if="page.includes('modules')"
@@ -92,6 +93,7 @@ import { ref } from "vue";
 import docs from "@/helpers/docs";
 
 import DocIntroView from "./documentation/DocIntroView.vue";
+import DocFeaturesView from "./documentation/DocFeaturesView.vue";
 import DocDashboardView from "./documentation/DocDashboardView.vue";
 import DocModuleView from "./documentation/DocModuleView.vue";
 import DocCoursesView from "./documentation/DocCoursesView.vue";
