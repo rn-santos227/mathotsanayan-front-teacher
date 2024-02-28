@@ -1,7 +1,12 @@
 export default [
   {
-    text: "Introduction",
+    text: "About",
     page: "intro",
+    subpages: [],
+  },
+  {
+    text: "Features",
+    page: "features",
     subpages: [],
   },
   {
