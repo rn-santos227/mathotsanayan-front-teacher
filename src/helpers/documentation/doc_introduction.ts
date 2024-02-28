@@ -1,32 +1,34 @@
 const docs: string[] = [
-  `Welcome to MatHOTSanayan Teacher Application, the dedicated platform for 
-  managing Computer Aided Assessment (CAA) tasks, tailored specifically for 
-  teachers. In this guide, we'll explore the core functionalities designed 
-  to empower educators in efficiently overseeing their classroom activities. 
-  The teacher dashboard serves as a central hub, offering real-time insights
-  into examination progress and results of students assigned to them. With
-  an intuitive interface, teachers can seamlessly navigate through vital
-  performance indicators, ensuring informed decision-making throughout their
-  teaching journey.`,
+  `Welcome to MatHOTSanayan for Teachers, a dynamic online platform designed
+  to empower educators with an extensive practice test bank focusing on
+  Higher Order Thinking Skills (HOTS). With a focus on empowering learners,
+  MatHOTSanayan provides a comprehensive test bank specifically designed to
+  enhance problem-solving abilities in mathematics.`,
 
-  `Within Student Management, MatHOTSanayan equips teachers with tools for
-  seamless enrollment and organization of students within their classes.
-  Teachers can effortlessly add new students, sections, courses, and
-  schools, ensuring accurate and up-to-date records. Notably, when teachers
-  create new sections, they are automatically assigned to oversee them,
-  streamlining administrative processes. Furthermore, teachers have the
-  authority to assign students to the sections they handle, enabling
-  personalized classroom management aligned with their teaching
-  responsibilities.`,
+  ` At the core of the platform lies the subject of mathematics, a fundamental
+  discipline that plays a crucial role in various academic and professional
+  pursuits. MatHOTSanayan provides targeted practice materials to strengthen
+  students' understanding and proficiency.`,
 
-  `MatHOTSanayan also provides robust features for Examination Progress and
-  Result tracking, empowering teachers to monitor student performance
-  effectively. Through the platform, teachers gain access to detailed
-  insights into the progress and results of students assigned to their
-  sections, facilitating targeted intervention and support as needed. This
-  section of the guide offers comprehensive instructions on how teachers can
-  leverage these features to enhance their teaching practices and ensure
-  academic success for their students.`,
+  ` The platform acknowledges the importance of cultivating higher-order
+  thinking skills, such as critical thinking, creative thinking,
+  metacognition, reflective thinking and problem-solving.
+  MatHOTSanayan focuses on providing practice tests that challenge
+  students to think beyond rote memorization and apply their knowledge
+  to solve complex mathematical problems.`,
+
+  ` “Sanayan” is a Filipino term that embodies the essence of practice
+  or habit formation. MatHOTSanayan acknowledges the significance of
+  consistent practice in mastering mathematical concepts. It embodies
+  this principle by offering a rich array of practice tests designed
+  to refine students' mathematical proficiency.`,
+
+  `MatHOTSanayan is driven by a singular mission: to empower students to
+  excel in mathematics by providing them with a solid platform for
+  practicing high-level problem-solving skills. The belief is that through
+  consistent practice and exposure to diverse mathematical challenges,
+  students can enhance their understanding of mathematical concepts and
+  develop the skills necessary to succeed academically and beyond.`,
 ];
 
 export default docs;
