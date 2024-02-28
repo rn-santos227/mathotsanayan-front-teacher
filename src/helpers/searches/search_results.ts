@@ -23,7 +23,7 @@ const search_list: Array<Category> = [
   },
   {
     text: "Subject",
-    value: "subject.name",
+    value: "module.subject",
   },
 ];
 export default search_list;
