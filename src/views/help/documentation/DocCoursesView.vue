@@ -8,6 +8,12 @@
       <p class="ma-6">
         {{ docs[0] }}
       </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_005.png')"
+      />
     </div>
 
     <div v-if="focusPage === 'courses-create'">
@@ -15,6 +21,15 @@
         MatHotSanayan Teacher Courses Create
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[1] }}
+      </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_006.png')"
+      />
     </div>
 
     <div v-if="focusPage === 'courses-update'">
@@ -22,6 +37,15 @@
         MatHotSanayan Teacher Courses Update
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[2] }}
+      </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_007.png')"
+      />
     </div>
 
     <div v-if="focusPage === 'courses-delete'">
@@ -29,6 +53,15 @@
         MatHotSanayan Teacher Courses Deletion
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[3] }}
+      </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_008.png')"
+      />
     </div>
   </v-card-text>
 </template>
