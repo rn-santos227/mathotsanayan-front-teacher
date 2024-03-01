@@ -21,6 +21,15 @@
         MatHotSanayan Teacher Sections Create
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[1] }}
+      </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_010.png')"
+      />
     </div>
 
     <div v-if="focusPage === 'sections-update'">
@@ -28,6 +37,9 @@
         MatHotSanayan Teacher Sections Update
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[2] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'sections-delete'">
@@ -35,6 +47,9 @@
         MatHotSanayan Teacher Sections Deletion
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[3] }}
+      </p>
     </div>
   </v-card-text>
 </template>
