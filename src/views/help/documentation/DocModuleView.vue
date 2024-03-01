@@ -65,6 +65,27 @@
         MatHotSanayan Teacher Modules Question Test
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[9] }}
+      </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_004.png')"
+      />
+
+      <p class="ma-6">
+        {{ docs[10] }}
+      </p>
+
+      <p class="ma-6">
+        {{ docs[11] }}
+      </p>
+
+      <p class="ma-6">
+        {{ docs[12] }}
+      </p>
     </div>
   </v-card-text>
 </template>
