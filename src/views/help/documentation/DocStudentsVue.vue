@@ -8,6 +8,12 @@
       <p class="ma-6">
         {{ docs[0] }}
       </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_013.png')"
+      />
     </div>
 
     <div v-if="focusPage === 'students-search'">
@@ -15,6 +21,9 @@
         MatHotSanayan Teacher Students Filter Search
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[1] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'students-create'">
@@ -22,6 +31,9 @@
         MatHotSanayan Teacher Students Create
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[2] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'students-update'">
@@ -29,6 +41,9 @@
         MatHotSanayan Teacher Students Update
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[3] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'students-delete'">
@@ -36,6 +51,9 @@
         MatHotSanayan Teacher Students Deletion
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[4] }}
+      </p>
     </div>
   </v-card-text>
 </template>
