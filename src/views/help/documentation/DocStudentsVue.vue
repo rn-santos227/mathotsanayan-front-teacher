@@ -76,7 +76,7 @@
       <v-img
         class="ma-6"
         cover
-        :src="require('@/assets/images/help/doc_016.png')"
+        :src="require('@/assets/images/help/doc_018.png')"
       />
     </div>
   </v-card-text>
