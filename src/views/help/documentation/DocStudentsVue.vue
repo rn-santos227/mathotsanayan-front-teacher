@@ -56,6 +56,12 @@
       <p class="ma-6">
         {{ docs[3] }}
       </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_015.png')"
+      />
     </div>
 
     <div v-if="focusPage === 'students-delete'">

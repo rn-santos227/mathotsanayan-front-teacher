@@ -13,6 +13,10 @@ const docs: string[] = [
   database. It involves providing information such as student’s name,
   course, school, section, email address, contact number, student number,
   and default password.`,
+
+  `        This functionality enables teachers to modify existing student details
+  stored in the database. For example, they might need to update the
+  student’s name, course, school, student number, and email address.`,
 ];
 
 export default docs;
