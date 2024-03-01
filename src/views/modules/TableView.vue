@@ -54,6 +54,7 @@
               <v-icon size="large">mdi-dots-horizontal</v-icon>
               <v-menu activator="parent">
                 <v-list density="compact" variant="plain">
+                  <DetailsView v-bind:module="item" />
                   <QuestionView v-bind:module="item" v-bind:index="index" />
                 </v-list>
               </v-menu>
@@ -89,6 +90,7 @@ import { useModulesModule } from "@/store";
 import { getSubjectName } from "@/helpers/instance";
 
 import QuestionView from "./questions/DialogView.vue";
+import DetailsView from "./DetailsView.vue";
 
 import SuccessDialogComponent from "@/components/dialogs/SuccessDialogComponent.vue";
 import ErrorDialogComponent from "@/components/dialogs/ErrorDialogComponent.vue";
