@@ -21,7 +21,7 @@
           flat
         >
           <v-card-actions class="mx-4">
-            <span class="text-h6"> Student Advance Search </span>
+            <span class="text-h6"> Student Advanced Search </span>
             <v-spacer />
             <v-btn
               density="comfortable"
