@@ -24,6 +24,12 @@
       <p class="ma-6">
         {{ docs[1] }}
       </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_019.png')"
+      />
     </div>
 
     <div v-if="focusPage === 'students-create'">
