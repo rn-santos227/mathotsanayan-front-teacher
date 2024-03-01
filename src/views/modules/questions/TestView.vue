@@ -18,7 +18,7 @@
         >
           <v-card-actions class="mx-4 mb-2">
             <span class="text-h6">
-              Test Question ID: {{ padLeft(props.question.id) }}
+              Question ID: {{ padLeft(props.question.id) }}
             </span>
             <v-spacer />
             <v-btn

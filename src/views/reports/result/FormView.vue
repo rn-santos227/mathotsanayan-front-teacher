@@ -22,7 +22,7 @@
       <v-col cols="12" sm="4">
         <v-text-field
           v-model.trim="moduleName"
-          label="Module Name"
+          label="Module Title"
           variant="outlined"
           hide-details
           readonly

@@ -21,13 +21,13 @@ const headers: ReadonlyHeaders = [
     key: "type",
   },
   {
-    title: "Correct Answers",
+    title: "Number of Correct Answers",
     align: "start",
     sortable: true,
     key: "corrects.length",
   },
   {
-    title: "Options",
+    title: "Number of Options",
     align: "start",
     sortable: true,
     key: "options.length",

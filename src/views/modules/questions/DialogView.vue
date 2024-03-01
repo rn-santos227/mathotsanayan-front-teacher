@@ -18,7 +18,7 @@
           flat
         >
           <v-card-actions class="mx-4">
-            <span class="text-h6"> Module Question </span>
+            <span class="text-h6"> Test Questions </span>
             <v-spacer />
             <v-btn
               density="comfortable"

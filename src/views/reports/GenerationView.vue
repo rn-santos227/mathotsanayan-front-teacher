@@ -21,7 +21,7 @@ const exportToExcel = async () => {
     [
       "Student Name",
       "Section",
-      "Module Name",
+      "Module Title",
       "Stage",
       "Score Result",
       "Grade",
