@@ -26,8 +26,18 @@
       </span>
       <v-divider class="my-2" />
       <p class="ma-6">
-        {{ docs[0] }}
+        {{ docs[2] }}
       </p>
+
+      <p class="ma-6">
+        {{ docs[3] }}
+      </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_023.png')"
+      />
     </div>
 
     <div v-if="focusPage === 'reports-generate'">
