@@ -40,6 +40,12 @@
       <p class="ma-6">
         {{ docs[2] }}
       </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_014.png')"
+      />
     </div>
 
     <div v-if="focusPage === 'students-update'">
