@@ -8,6 +8,16 @@
       <p class="ma-6">
         {{ docs[0] }}
       </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_020.png')"
+      />
+
+      <p class="ma-6">
+        {{ docs[1] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'reports-search'">
@@ -15,6 +25,9 @@
         MatHotSanayan Teacher Result Filter Search
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[0] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'reports-generate'">
@@ -22,6 +35,9 @@
         MatHotSanayan Teacher Result Generation
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[0] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'reports-details'">
@@ -29,6 +45,9 @@
         MatHotSanayan Teacher Result Details
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[0] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'reports-answers'">
@@ -36,6 +55,9 @@
         MatHotSanayan Teacher Answer List
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[0] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'reports-invalidate'">
@@ -43,6 +65,9 @@
         MatHotSanayan Teacher Result Invalidation
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[0] }}
+      </p>
     </div>
   </v-card-text>
 </template>
