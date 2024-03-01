@@ -72,6 +72,12 @@
       <p class="ma-6">
         {{ docs[4] }}
       </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_016.png')"
+      />
     </div>
   </v-card-text>
 </template>
