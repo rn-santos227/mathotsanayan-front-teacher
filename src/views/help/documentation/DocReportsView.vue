@@ -48,6 +48,10 @@
       <p class="ma-6">
         {{ docs[4] }}
       </p>
+
+      <p class="ma-6">
+        {{ docs[5] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'reports-details'">

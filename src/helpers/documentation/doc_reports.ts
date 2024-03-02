@@ -40,6 +40,12 @@ const docs: string[] = [
   teachers to download the results in an Excel file, which is a widely
   used spreadsheet format known for its versatility and compatibility
   across various systems.`,
+
+  `With this feature, teachers can easily track and assess their students'
+  progress over time, facilitating effective teaching and personalized
+  instruction. Additionally, the structured format of the Excel file
+  simplifies data manipulation and allows for further analysis or
+  integration with other educational tools and systems.`,
 ];
 
 export default docs;
