@@ -42,6 +42,10 @@
         cover
         :src="require('@/assets/images/help/doc_016.png')"
       />
+
+      <p class="ma-6">
+        {{ docs[14] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'modules-questions'">

@@ -77,6 +77,10 @@ const docs: string[] = [
   provide comprehensive information and guidance for each module. It
   comprises the module title, module stage, passing rate slider, subject,
   description, objective, and instructions.`,
+
+  `        The module title gives the teacher an idea of topic covered by the
+  module. Additionally, the module stage indicates the stage or level of
+  the module within the subject.`,
 ];
 
 export default docs;
