@@ -78,19 +78,25 @@ const docs: string[] = [
   comprises the module title, module stage, passing rate slider, subject,
   description, objective, and instructions.`,
 
-  `        The module title gives the teacher an idea of topic covered by the
+  `The module title gives the teacher an idea of topic covered by the
   module. Additionally, the module stage indicates the stage or level of
   the module within the subject.`,
 
-  `        The passing rate slider is a customizable slider control allowing the
+  `The passing rate slider is a customizable slider control allowing the
   teacher to set the desired passing rate for the module, adjustable from
   0% to 100%. This feature is particularly useful for customizing
   assessments or adjusting difficulty levels based on the needs of the
   students.`,
 
-  `        Furthermore, the subject specifies the subject area to which the module
+  `Furthermore, the subject specifies the subject area to which the module
   belongs. The description provides additional information or context
   about the module.`,
+
+  `The objective clearly defines the learning outcome or goal that students
+  are expected to achieve upon completing the module. Finally, the
+  instructions furnish students with guidelines on how to approach and
+  respond to the module's test questions, facilitating effective
+  engagement with the material.`,
 ];
 
 export default docs;

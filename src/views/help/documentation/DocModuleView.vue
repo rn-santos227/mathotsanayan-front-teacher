@@ -54,6 +54,10 @@
       <p class="ma-6">
         {{ docs[16] }}
       </p>
+
+      <p class="ma-6">
+        {{ docs[17] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'modules-questions'">
