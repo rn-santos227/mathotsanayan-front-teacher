@@ -62,6 +62,15 @@ const docs: string[] = [
   measure of student's proficiency on the subject matter. The percentage
   grade reflects student's performance against the grading scale, enabling
   teachers to assess their students' performance relative to expectations.`,
+
+  `Teachers can also assess student engagement and perseverance by
+  examining metrics such as the total number of attempts made across all
+  questions. The accuracy metric, derived from the average of total items
+  divided by total attempts plus the percentage grade, offers a
+  comprehensive evaluation of performance, considering both correctness
+  and persistence. Moreover, the tally of skips, categorized as mistakes,
+  provides teachers insights into students' decision-making processes
+  during the assessment.`,
 ];
 
 export default docs;
