@@ -90,6 +90,12 @@ const docs: string[] = [
   correctness of students' responses. It distinguishes between correct and
   incorrect answers, aiding teachers in evaluating overall performance and
   identifying areas for improvement.`,
+
+  `        Positioned between the Response Category and Question columns, the
+  Response column displays the actual responses provided by students for
+  each question. This enables straightforward comparison between students'
+  answers and the question prompts, assisting teachers in identifying
+  misconceptions or areas needing clarification.`,
 ];
 
 export default docs;
