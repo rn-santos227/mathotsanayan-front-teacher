@@ -91,11 +91,30 @@ const docs: string[] = [
   incorrect answers, aiding teachers in evaluating overall performance and
   identifying areas for improvement.`,
 
-  `        Positioned between the Response Category and Question columns, the
+  `Positioned between the Response Category and Question columns, the
   Response column displays the actual responses provided by students for
   each question. This enables straightforward comparison between students'
   answers and the question prompts, assisting teachers in identifying
   misconceptions or areas needing clarification.`,
+
+  `The Question Content column presents the content of the exam questions,
+  offering specific details, information, or instructions to guide
+  teachers in understanding what is being assessed.`,
+
+  `The Attempt Number column indicates the number of attempts made by each
+  student on a particular question. It provides insights into students'
+  persistence and engagement with the material.`,
+
+  `The Time Spent column shows the amount of time each student spent on a
+  particular question. This offers valuable insights into students' time
+  management skills during the assessment, aiding teachers in
+  understanding individual pacing and allocation of time.`,
+
+  `By carefully reviewing these components, teachers can identify patterns,
+  monitor progress, and make informed decisions to enhance their students'
+  learning outcomes. The detailed breakdown facilitates the identification
+  of specific areas for improvement, allowing teachers to tailor their
+  instructional strategies accordingly to better support student learning.`,
 ];
 
 export default docs;

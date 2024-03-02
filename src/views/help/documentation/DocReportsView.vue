@@ -110,6 +110,22 @@
       <p class="ma-6">
         {{ docs[12] }}
       </p>
+
+      <p class="ma-6">
+        {{ docs[13] }}
+      </p>
+
+      <p class="ma-6">
+        {{ docs[14] }}
+      </p>
+
+      <p class="ma-6">
+        {{ docs[15] }}
+      </p>
+
+      <p class="ma-6">
+        {{ docs[16] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'reports-invalidate'">
