@@ -74,6 +74,10 @@
         cover
         :src="require('@/assets/images/help/doc_021.png')"
       />
+
+      <p class="ma-6">
+        {{ docs[7] }}
+      </p>
     </div>
 
     <div v-if="focusPage === 'reports-answers'">

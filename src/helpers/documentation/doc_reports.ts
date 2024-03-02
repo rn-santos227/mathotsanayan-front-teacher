@@ -50,12 +50,18 @@ const docs: string[] = [
   `The Results Details section furnishes teachers with a comprehensive
   breakdown of their students' examination performance, offering valuable
   insights into their strengths and areas for improvement. It commences by
-  presenting essential data such as the student’s name, section, module
+  presenting essential data such as the student's name, section, module
   title corresponding to the examination taken, and clear indications of
   their pass or fail status. Furthermore, teachers can discern the
   duration taken by students to complete the exam, along with insights
   into average time allocated per question, thereby providing contextual
   understanding of their performance.`,
+
+  `In addition to qualitative insights, numerical data, including raw
+  scores in comparison to the total item count, offer a quantitative
+  measure of student's proficiency on the subject matter. The percentage
+  grade reflects student's performance against the grading scale, enabling
+  teachers to assess their students' performance relative to expectations.`,
 ];
 
 export default docs;
