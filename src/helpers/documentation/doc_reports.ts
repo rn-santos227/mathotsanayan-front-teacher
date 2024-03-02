@@ -33,6 +33,13 @@ const docs: string[] = [
   Overall, the examination results filter results feature is indeed a
   valuable resource for teachers in optimizing their workflow and ensuring
   a comprehensive understanding of student performance.`,
+
+  `The results generation feature in MatHOTSanayan is a valuable tool for
+  teachers, facilitating the efficient retrieval of student examination
+  results in a structured format. Specifically, this feature allows
+  teachers to download the results in an Excel file, which is a widely
+  used spreadsheet format known for its versatility and compatibility
+  across various systems.`,
 ];
 
 export default docs;

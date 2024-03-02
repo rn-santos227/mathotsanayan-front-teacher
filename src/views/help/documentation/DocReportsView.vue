@@ -46,7 +46,7 @@
       </span>
       <v-divider class="my-2" />
       <p class="ma-6">
-        {{ docs[0] }}
+        {{ docs[4] }}
       </p>
     </div>
 
