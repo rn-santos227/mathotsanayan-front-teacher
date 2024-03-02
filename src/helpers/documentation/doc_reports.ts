@@ -71,6 +71,15 @@ const docs: string[] = [
   and persistence. Moreover, the tally of skips, categorized as mistakes,
   provides teachers insights into students' decision-making processes
   during the assessment.`,
+
+  `The third segment of the Results Details section presents a detailed
+  table showing each question alongside the student's responses. This
+  detailed view lets teachers to systematically review student responses,
+  identify recurring patterns, and analyze problem-solving strategies. By
+  Remarks Percentage Grade Response Category Response Total Time Attempt
+  Number scrutinizing individual question responses, teachers gain
+  insights into students' areas of strength and weakness, facilitating
+  targeted improvement strategies for future assessments.`,
 ];
 
 export default docs;
