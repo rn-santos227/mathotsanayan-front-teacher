@@ -8,6 +8,12 @@
       <p class="ma-6">
         {{ docs[0] }}
       </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_027.png')"
+      />
     </div>
 
     <div v-if="focusPage === 'audit-details'">
@@ -15,6 +21,19 @@
         MatHotSanayan Teacher Audit Details
       </span>
       <v-divider class="my-2" />
+      <p class="ma-6">
+        {{ docs[1] }}
+      </p>
+
+      <p class="ma-6">
+        {{ docs[2] }}
+      </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_028.png')"
+      />
     </div>
   </v-card-text>
 </template>

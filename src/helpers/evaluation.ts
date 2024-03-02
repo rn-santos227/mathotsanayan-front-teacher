@@ -3,8 +3,9 @@ import Result from "@/types/Result";
 
 export function evaluateExam(result: Result) {
   const module = result.module;
-  if (typeof module != "object") return;
-  if (!(module.count && result.total_score)) return;
+  if (typeof module != "object") return "Failed";
+  if (!(module.count && result.total_score)) return "Failed";
+  if (result.total_score <= 0) return "Failed";
 
   const average = (result.total_score / module.count) * 100;
   const passing = module.passing;
