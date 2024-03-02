@@ -72,6 +72,11 @@ const docs: string[] = [
   correct answer. This feature helps teachers understand where students
   may face challenges and areas that may require further instruction or
   clarification.`,
+
+  `This feature encompasses various essential components designed to
+  provide comprehensive information and guidance for each module. It
+  comprises the module title, module stage, passing rate slider, subject,
+  description, objective, and instructions.`,
 ];
 
 export default docs;
