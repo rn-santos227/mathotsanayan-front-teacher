@@ -28,6 +28,13 @@
       </p>
     </div>
 
+    <div v-if="focusPage === 'modules-details'">
+      <span class="text-h5 font-weight-bold">
+        MatHotSanayan Teacher Modules Details
+      </span>
+      <v-divider class="my-2" />
+    </div>
+
     <div v-if="focusPage === 'modules-questions'">
       <span class="text-h5 font-weight-bold">
         MatHotSanayan Teacher Modules Questions List
