@@ -23,6 +23,10 @@ export default [
         page: "modules-main",
       },
       {
+        text: "Modules Details",
+        page: "modules-details",
+      },
+      {
         text: "Modules Questions",
         page: "modules-questions",
       },
