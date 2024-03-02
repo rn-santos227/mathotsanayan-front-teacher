@@ -46,6 +46,16 @@ const docs: string[] = [
   instruction. Additionally, the structured format of the Excel file
   simplifies data manipulation and allows for further analysis or
   integration with other educational tools and systems.`,
+
+  `The Results Details section furnishes teachers with a comprehensive
+  breakdown of their students' examination performance, offering valuable
+  insights into their strengths and areas for improvement. It commences by
+  presenting essential data such as the student’s name, section, module
+  title corresponding to the examination taken, and clear indications of
+  their pass or fail status. Furthermore, teachers can discern the
+  duration taken by students to complete the exam, along with insights
+  into average time allocated per question, thereby providing contextual
+  understanding of their performance.`,
 ];
 
 export default docs;
