@@ -134,8 +134,14 @@
       </span>
       <v-divider class="my-2" />
       <p class="ma-6">
-        {{ docs[0] }}
+        {{ docs[17] }}
       </p>
+
+      <v-img
+        class="ma-6"
+        cover
+        :src="require('@/assets/images/help/doc_024.png')"
+      />
     </div>
   </v-card-text>
 </template>

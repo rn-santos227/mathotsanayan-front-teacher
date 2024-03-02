@@ -115,6 +115,14 @@ const docs: string[] = [
   learning outcomes. The detailed breakdown facilitates the identification
   of specific areas for improvement, allowing teachers to tailor their
   instructional strategies accordingly to better support student learning.`,
+
+  `The results invalidation feature allows teachers to invalidate certain
+  test results for specific reasons. Sometimes, technical glitches may
+  lead to inaccurate results for certain test-takers. The results
+  invalidation feature allows teachers to rectify such errors by
+  invalidating the affected results and allowing the test-takers to retake
+  the test if necessary. This feature is valuable in maintaining the
+  integrity and accuracy of the test results.`,
 ];
 
 export default docs;
