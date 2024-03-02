@@ -87,6 +87,10 @@ const docs: string[] = [
   0% to 100%. This feature is particularly useful for customizing
   assessments or adjusting difficulty levels based on the needs of the
   students.`,
+
+  `        Furthermore, the subject specifies the subject area to which the module
+  belongs. The description provides additional information or context
+  about the module.`,
 ];
 
 export default docs;
