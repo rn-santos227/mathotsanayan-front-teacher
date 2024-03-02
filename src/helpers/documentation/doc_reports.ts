@@ -80,6 +80,16 @@ const docs: string[] = [
   Number scrutinizing individual question responses, teachers gain
   insights into students' areas of strength and weakness, facilitating
   targeted improvement strategies for future assessments.`,
+
+  `The Response Details section serves as a comprehensive tool for teachers
+  to evaluate their students' performance on the exams. It provides a
+  breakdown of each student's responses, allowing for detailed analysis
+  and assessment.`,
+
+  `The Response Category column provides immediate feedback on the
+  correctness of students' responses. It distinguishes between correct and
+  incorrect answers, aiding teachers in evaluating overall performance and
+  identifying areas for improvement.`,
 ];
 
 export default docs;
