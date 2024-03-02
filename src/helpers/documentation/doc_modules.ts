@@ -2,7 +2,8 @@ const docs: string[] = [
   `This is a comprehensive feature designed to facilitate teachers in
   managing and accessing modules for their respective subjects. It
   provides essential details such as module titles, number of items per
-  module, subject classifications, and action link for viewing questions.`,
+  module, subject classifications, and , and action buttons for viewing 
+  module details and test questions`,
 
   `The Modules Manager displays a list of all available modules, each
   clearly identified by its title. This allows teachers to quickly
@@ -16,11 +17,13 @@ const docs: string[] = [
   locating modules pertinent to academic disciplines, ensuring seamless
   access to relevant content.`,
 
-  `Additionally, an intuitive action button is provided for each listed
-  module, enabling teachers to effortlessly access the test questions
-  within. This action button includes a direct link to the test questions,
-  streamlining the process of reviewing and exploring the content of each
-  module in detail.`,
+  `Additionally, intuitive action buttons are provided for each listed
+  module, enabling teachers to effortlessly access both the details about
+  each module and the test questions within. These action buttons provide
+  direct access to module details, facilitating a comprehensive
+  understanding of the module’s scope and objectives. Additionally, they
+  provide access to the test questions, simplifying the process of
+  reviewing and exploring the content of each module in detail.`,
 
   `This is a user-friendly interface designed to display questions within a
   module, along with relevant images, question types, the number of stored
